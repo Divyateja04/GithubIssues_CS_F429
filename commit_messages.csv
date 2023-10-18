@@ -1,0 +1,379 @@
+Fix parameter order according to Version 2.1.0 (#2786)  Version 2.1.0 introduced a breaking change to the `Repository.create_pull` method. This PR updates the example provided in the docs: https://pygithub.readthedocs.io/en/latest/examples/PullRequest.html#create-a-new-pull-request
+Add missing GitHub classes to docs (#2783)
+Fix mypy error with urllib3>=2.0.0a1 by ignoring (#2779)
+Release 2.1.1 (#2777)
+Fix rst format in `doc/changes.rst` (#2776)
+Require urllib 1.26.0 or greater (#2774)
+"Fix pypi-release workflow, allow for manual run (#2771)"
+Release 2.1.0 (#2770)
+Merge `StatsContributor.pyi` back to source (#2761)
+Merge `Repository.pyi` back to source (#2749)
+Merge `github/Organization.pyi` back to source (#2744)
+Merge `PullRequest.pyi` back to source (#2743)
+Merge `MainClass.pyi` and `__init__.pyi` back to source (#2692)
+Make Branch.edit_* functions return objects (#2748)
+Close replay test data file silently when test is failing already (#2747)
+Add `license` attribute to `Repository` (#2721)
+Merge `NamedUser.pyi` back to source (#2691)
+Merge `Team.pyi` back to source (#2690)
+Merge `GithubIntegration.pyi` back to source (#2689)
+Merge `GitRelease.pyi` back to source (#2688)
+Add missing attributes to `Repository`  (#2742)
+Add `is_alphanumeric` attribute to Autolink and `Repository.create_autolink` (#2630)
+Merge `WorkflowJob` type stub back to source (#2653)
+Merge `GistFile` type stub back to source (#2651)
+Close connections after use (#2724)
+Merge `Deployment.pyi` back to source (#2687)
+Merge `Workflow.pyi` back to source (#2686)
+Merge `GistHistoryState.pyi` back to source (#2685)
+Merge `IssueEvent` type stub back to source (#2684)
+Merge `Download` type stub back to source (#2683)
+Merge `Milestone` type stub back to source (#2682)
+Merge `PullRequestComment` type stub back to source (#2681)
+Merge `Hook` type stub back to source (#2680)
+Merge `ProjectColumn` type stub back to source (#2679)
+Merge `TeamDiscussion` type stub back to source (#2678)
+Merge `Project` type stub back to source (#2677)
+Merge `ProjectCard` type stub back to source (#2676)
+Merge `Notification` type stub back to source (#2675)
+Merge `IssueComment` type stub back to source (#2674)
+Merge `Migration` type stub back to source (#2673)
+Merge `GitReleaseAsset` type stub back to source (#2672)
+Merge `GithubApp` type stub back to sourcce (#2671)
+Merge `DeploymentStatus` type stub back to source (#2665)
+Merge `TimelineEvent` type stub back to source (#2664)
+Merge `PullRequestReview` type stub back to source (#2662)
+Merge `Event` type stub back to source (#2660)
+Merge `GistComment` type stub back to source (#2657)
+Merge `Gist` type stub back to source (#2655)
+"Suppress `requests` fallback to netrc, provide `github.Auth.Netrc` (#2739)"
+fix required_conversation_resolution assertion (#2715)
+Make CI support merge queue (#2644)
+Pass Requester arguments to `AppInstallationAuth.__integration` (#2695)
+Fix assertion creating pull request review comment (#2641)
+Run CI on release branches (#2708)
+CI: remove conflict label workflow (#2669)
+Fix pip install command in README.md (#2731)
+Merge `SourceImport` type stub back to source (#2663)
+Merge `Topic` type stub back to source (#2661)
+Merge `License` type stub back to source (#2659)
+Merge `File` type stub back to source (#2658)
+Merge `RepositoryKey` type stub back to source (#2656)
+Merge `Label` type stub back to source (#2652)
+Merge `Installation` type stub back to source (#2649)
+Merge `PullRequestMergeStatus` type stub back to source (#2646)
+Merge some type stub back to source (#2650)
+Merge `Permissions` type stub back to source (#2648)  Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+Merge `RequiredStatusChecks` type stub back to source (#2647)
+Merge `Referrer` type stub back to source (#2645)
+Adding feature for enterprise consumed license (#2626)  Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+Search Workflows by Name (#2711)
+Add Secret and Variable classes (#2623)  Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+Merge `StatsCodeFrequency` type stub back to source (#2638)  Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+Merge Plan type stub back to source (#2637)  Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+Merge ContentFile type stub back to source (#2635)  Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+CommitComment (#2634)  Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+Add Autolink API link (#2632)  Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+Update `add_attribute.py` to latest conding style (#2631)  Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+Safely coerce responseHeaders to int (#2697)  Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+CI: Improve ruff DX (#2667)
+Fix assertion for subject_type in creating pull request review comment (#2642)  Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+CI: Increase wait and retries of labels action (#2670)  Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+Replace `flake8` with `ruff` (#2617)  Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+CI: update labels action name and version (#2654)  Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+CI: label PRs that have conflicts (#2622)
+Merge type stub bask to source: `Comparison` `CommitStatus` `CommitCombinedStatus` (#2633)  Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+Merge `Commit.pyi` back to source (#2616)  Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+Merge `Code*` type stub back to source (#2615)  Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+Merge `CheckSuite` type stub back to source (#2606)  Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+Merge `CheckRun` type stub back to source (#2605)  Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+Add required_linear_history attribute to BranchProtection (#2643)  Co-authored-by: Jacob Beard <jake@minnow.io> Co-authored-by: Paul Melnikow <github@paulmelnikow.com>
+Unify requirements files location & source in setup.py (#2598)  Co-authored-by: Trim21 <trim21.me@gmail.com>
+Merge `AuthenticatedUser` type stubs back to source (#2577)  Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+Merge Path type stub back to source (#2639)
+Enable mypy `disallow_untyped_defs` (#2609)
+Enable mypy `check_untyped_defs` (#2607)
+Set line length to 120 characters (#2599)
+"Add retry issue to GithubException, don't log it (#2611)"
+Merge some simple class' type stubs back to source (#2570)
+Merge some simple classes' type stubs back to source  (#2576)  Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+Add `message` property to `GithubException` (#2591)
+Add support for repo and org level actions variables (#2580)  Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+"Add missing arguments to Workflow.get_runs() (#2346)  Adds missing arguments created, exclude_pull_requests, head_sha to the query options of Workflow.get_runs()."
+CI: Build and check package before release (#2593)
+Merge `Issue.pyi` back to source (#2568)  Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+Use timezone-aware reset datetime in GithubRetry.py (#2610)  Co-authored-by: Patryk Szulczyk <patryk.szulczyk@skyscanner.net> Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+Use `typing_extensions` for `TypedDict` (#2592)
+Merge `WorkflowRun` type stub back to source (#2554)
+Merge `ApplicationOAuth.pyi` back to source (#2569)
+CI: Update action actions/setup-python (#2382)  Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+Add more methods and attributes to Repository.pyi (#2581)
+Add github.Rate.used field (#2531)  Co-authored-by: Nikolay Yurin <yurinnick@meta.com> Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+"Merge `Branch` type stubs back to source (#2571)  Introduces new helper methods `is_defined`, `is_undefined`, `is_optional`, `is_optional_list` that is going to simplify input assertions in all our methods.  Co-authored-by: Enrico Minack <github@enrico.minack.dev>"
+CI: Make pytest color logs (#2597)
+precommit: move `flake8` as last (#2595)
+"Test on Windows and macOS, don't fail fast (#2590)  Co-authored-by: Jirka Borovec <6035284+Borda@users.noreply.github.com>"
+Publish version 2.0.0 (#2583)
+Remove symlinks from test data (#2588)
+Add myself to funding (#2585)
+"Fix `Branch.bypass_pull_request_allowances` failing with ""nil is not an object"" (#2535)  Signed-off-by: Thomas Devoogdt <thomas@devoogdt.com>"
+Make datetime objects timezone-aware (#2565)  Comparing timestamps returned by the API with naive datetime objects (without timezone information) will raise an error. Add `tzinfo=datetime.timezone.utc` to your datetime instance.  Co-authored-by: John T. Wodder II <git@varonathe.org>
+"Throttle requests to mitigate RateLimitExceededExceptions (#2145)  This introduces a throttling of requests to the Github REST API (1s for writes, 0.25s for reads, configurable) to mitigate secondary rate limit errors and comply with Github's best practices:  https://docs.github.com/en/rest/guides/best-practices-for-integrators?apiVersion=2022-11-28#dealing-with-secondary-rate-limits"
+Retry retryable 403 (rate limit) (#2387)
+Force Unix EOL (#2573)
+Merge `Artifact` type stub back to source (#2553)
+Move to main default branch (#2566)
+Release 1.59.0 (#2563)
+Test and fix UTC issue with AppInstallationAuth (#2561)
+Add type stub for MainClass.get_project_column (#2502)  Co-Authored: Attila Dulovics <dulovicsattila@gmail.com>
+Sync GithubIntegration __init__ arguments with github.Github (#2556)  Github and GithubIntegration now both support the same (full) set of Requester arguments. Creating a Github instance for a Github App Installation coming from GithubIntegration uses the same Requester arguments (except for auth).
+Update MAINTAINERS (#2545)  Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+"Link to stable docs, update introduction in package used by pypi, move auth arg front (#2557)"
+Add Webhook Deliveries (#2508)  Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+Add support for workflow jobs and steps (#1951)  Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+Merge PaginatedList.pyi back to source (#2555)  Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+merge GithubObject.pyi/Requester.pyi stubs back to source (#2463)  Co-authored-by: Enrico Minack <github@enrico.minack.dev> Co-authored-by: Jonathan Leitschuh <jonathan.leitschuh@gmail.com>
+"Add support for get_app() with App authentication (#2549)  Moves `Github.get_app()` called without `slug` parameter into `GithubIntegration`, because it needs an `AppAuth`, and we collect all such endpoints there. Calling `Github.get_app()` without `slug` parameter is now deprecated.  Replaces `datetime.utcnow()` with `datetime.now(timezone.utc)`, as it is deprecated in Python 3.12."
+"Allow multiline comments in PullRequest (#2540)  - change deprecated parameter position to line - add a parameter to allow multiline comment: start_line - add a parameter to allow comment as suggestion: as_suggestion - add more missing parameters: side, start_side, in_reply_to, subject_type"
+[CI] Moving linting into separate workflow (#2522)
+Implement `AppUserAuth` for Github App user tokens (#2546)  Allows to refresh Github App user token. Integrates `ApplicationOAuth` into `github.Auth`.
+Add support for environments (#2223)
+Make Requester.__createException robust against missing message and body (#2159)
+Fix auth issues with `Installation.get_repos` (#2547)
+Add support for new RepositoryAdvisories API :tada: (#2483)
+"Make `MainClass.get_app` return completed `GithubApp` when slug is given (#2543)  Fixes slug attribute to fetch app when not set. Loads app with slug lazily, fetch complete app without slug."
+"Add authentication classes, move auth logic there (#2528)  This adds argument `auth` and deprecates `login_or_token`, `password`, `jwt`, and `app_auth` arguments of `github.Github`.  This adds argument `auth` and deprecates `integration_id`, `private_key` of `github.GithubIntegration`.  This deprecates the `create_jwt` method of `github.GithubIntegration`, replaced by `github.Auth.AppAuth.create_jwt`."
+Add sort order and direction for getting comments (#2544)  Note: This is a breaking change. The order of parameters of `PullRequest.get_review_comments` has changed to match other `get_comments` methods and Github API parameter order. Users should change `PullRequest.get_review_comments(since)` to `PullRequest.get_review_comments(since=since)`.  Calling without parameter is not breaking: `PullRequest.get_review_comments()`
+Merging 1.58.x patch release notes into master (#2525)  Co-authored-by: Steve Kowalik <steven@wedontsleep.org>
+Add `name` filter to `Repository.get_artifacts()` (#2459)  Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+"Add `name`, `display_title` and `path` attributes to `WorkflowRun` (#2397)"
+Fix broken urls in docstrings (#2393)
+Add new `create_fork` arguments (#2493)  Adds support for new `create_fork` arguments:  - `name` - To set the name of the fork on creation  - `default_branch_only` - To only include the default branch  Signed-off-by: Jonathan Leitschuh <Jonathan.Leitschuh@gmail.com>
+add `ref` to Deployment (#2489)  Co-authored-by: Nevins Bartolomeo <nevins@sev.co>
+merge AppAuthentication.pyi to source (#2519)
+Add query `check_suite_id` integer to `Workflow.get_runs` (#2466)
+Merge GithubException.pyi stubs back to source (#2464)
+Add `generate_release_notes` parameter to `create_git_release` and `create_git_tag_and_release` (#2417)
+Add example for Pull Request comments to documentation (#2390)
+Add allow_auto_merge support to Repository (#2477)  Co-authored-by: Glenn McDonald <testworksau@users.noreply.github.com>
+fix: `Repository.get_artifact()` missing argument `artifact_id` (#2458)
+"Raise error on unsupported redirects, log supported redirects (#2524)"
+Fixes issue #2521 (#2529)
+Add missing fields from `GithubCredentials.py` to CONTRIBUTING.md (#2482)
+"Add missing attributes to Branch (#2512)  Co-authored-by: Juan Manuel ""Kang"" Perez <devel@kangmak.es>"
+Add allow_update_branch option to Organization (#2465)
+Add support for Issue.state_reason #2370 (#2392)  Co-authored-by: Nicolas Schweitzer <nicolas.schweitzer@amadeus.com>
+Add parameters to Repository.get_workflow_runs (#2408)
+Fix GithubIntegration using exiring jwt (#2460)
+Bump actions/checkout from 2 to 3.1.0 (#2327)  Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Add expiration argument back to GithubIntegration.create_jwt (#2439)  * Add expiration argument back to create_jwt
+"Add crypto extras to pyjwt, which pulls in cryptogaphy package (#2443)  * Add crypto extras to pyjwt, which pulls in cryptogaphy package * Remove cryptography dependency from more places * Remove integrations extra from docs"
+Remove RLock from Requester (#2446)
+Move CI to Python 3.11 release and 3.12 dev (#2434)
+Merge pull request #2425 from bluek1te/master  Pass requester base URL to integration (#2420)
+pass requester base URL to integration (#2420)
+RTD: install current project
+Add current dir sys.path as well
+Fix package name again
+Fix sphinx package name
+Use use_scm_version to get current version from git tag (#2429)
+Bump version to 1.58.0
+Add release drafter and pubilsh on tag creation (#2428)
+Add unarchiving support (#2391)
+Support full GitHub app authentication (#1986)  * Support full GitHub app authentication  Refactor GithubIntegration class and add test case for app authentication Add permissions and repository properties in InstallationAuthorization Set JWT_EXPIRY=60 by default in GithubIntegration constructor * Modify existing testcases for GithubIntegration as per the framework and add missing tests * Provide installation ID for creating the access token instead of getting the first installation * Add optional permissions support for installation access token * Add lock around app authentication * Keep compatibility for importing GithubIntegration from MainClass * Group app authentication parameters in a class  Co-authored-by: Malik Ammar Akbar <malikammar.akbar@pfizer.com> Co-authored-by: Enrico Minack <github@enrico.minack.dev>
+Continue the PR #1899 (#2386)  * A property to access the `assets` field of release (#1898)  ... in order to avoid extra requests.  <https://github.com/PyGithub/PyGithub/issues/1898>  * Remove comment to comply the review  * Add tests for GitRelease.assets  ---------  Co-authored-by: green-green-avk <45503261+green-green-avk@users.noreply.github.com>
+feat: add allow_forking to Repository (#2380)  * chore(dependency): flake8 has moved to github  * feat: add allow_forking to Repository  * chore: linting  Co-authored-by: hussaiia <ibrahim.hussaini@cba.com.au>
+Add code scanning alerts (#2227)
+Publish version 1.57
+Speed up get requested reviewers and teams for pr (#2349)
+"[WorkflowRun] - Add missing attributes (`run_started_at` & `run_attempt`), remove deprecated `unicode` type (#2273)"
+Add support for repository autolink references (#2016)
+Add retry and pool_size to typing (#2151)
+Fix/types for repo topic team (#2341)  Co-authored-by: Liuyang Wan <tsfdye@gmail.com>
+Require pyjwt>=2.4.0 to avoid CVE-2022-29217 (#2333)
+Add class Artifact (#2313) (#2319)  Co-authored-by: Aleksei Fedotov <aleksei@fedotov.email>
+Fix typo in blame ignore revs (#2342)
+"Add support for Python 3.11, drop EOL 3.6 (#2332)"
+Relax stale to 180 days (#2331)
+Publish version 1.56
+Create repo from template (#2090)  Co-authored-by: bagashvilit <bagashvilit@allegheny.edu> Co-authored-by: WonjoonC <chos@allegheny.edu> Co-authored-by: Isac Souza <isouza@daitangroup.com> Co-authored-by: Isac Souza <isouza@daitan.com> Co-authored-by: Liuyang Wan <tsfdye@gmail.com>
+Fix CI (#2330)
+"Improve signature of Repository.create_repo (#2118)  The docstring stated that `""*""` and `""none""` were valid values for the organization, but neither was actually supported (unless your organization was called `""none""`).  Remove the misleading information from the docstring, and add support for passing in an actual `Organization` object, for better typing and reliability properties.  Fixes #2116"
+"Fix replay data for Organization.create_secret() (#2096)  A recently merged PR added a const, which will be used when fetching repositories. Update replay data for a test that was not included in that change."
+Add support for 'visibility' attribute preview for Repositories (#1872)  Expose the new 'visibility' attribute for repository objects.  Fixes #1446
+"Add Repository.rename_branch method (#2089)  The GitHub API exposes an endpoint to rename a branch, so we should support calling it. Sadly, there is not enough information to add that method to the Branch class, so expose it in the Repository object.  Fixes #1901"
+Add function to delete pending reviews on a pull request (#1897)  Add a delete method to PullRequestReview to allow dismissing them.  Fixes #1856   Co-authored-by: bagashvilit <bagashvilit@allegheny.edu> Co-authored-by: WonjoonC <chos@allegheny.edu>
+"Cover all code paths in search_commits (#2087)  The search_commits method was only very lightly tested, meaning over half of it was not covered. Write another test case, covering all code paths."
+"Correctly deal when PaginatedList's data is a dict (#2084)  When calculating totalCount for a PaginatedList, if a Link header is not in the returned data, we use len() to calculate the number of items. PullRequest.get_review_requests() actually returns a dictionary, which neatly defeats this naive method. Peer inside the dictionary in this case, and add a test case.  Fixes #2053"
+Add comment on issue example (#2081)  Add an example showing how to comment on an existing issue.
+Use rate-limit in documentation URLs (#2036)  link to GitHub docs fixed: Replace rate_limit with rate-limit
+"Move lint and docs to Python 3.8 (#2077)  With Python 3.6 rapidly approaching end of life, move the docs and lint tox targets to Python 3.8, and also switch readthedocs to match."
+Add two_factor_authentication in AuthenticatedUser. (#1972)  Fixes #1971
+Add ProjectCard.edit() to the type stub (#2080)  The typing information for ProjectCard did not have edit(). Add it.
+"Add method to delete Workflow runs (#2078)  One piece of missing functionality is the ability to delete Workflow Runs, which the GitHub API supports. Add a delete() method to WorkflowRun.  Fixes #2019"
+"Implement organization.cancel_invitation() (#2072)  Implement a new function cancel_invitation for github.Organization objects, allowing for cancellation of organization invitations."
+Feat: Add `html_url` property in Team Class. (#1983)  Fixes: #1942
+"Add support for Python 3.10 (#2073)  Now that Python 3.10 has been released, we should test it in CI."
+Add github actions secrets to org (#2006)  Add functionality to create and delete Secrets for Organizations.
+"Correct replay for Organization.create_project() test (#2075)  The just landed test case for Organization.create_project() used the wrong Authorization headers, correct it."
+"Add type hint for Organization.create_project() (#2032)  Organization.create_project() did not have a type hint, add one, and a test case."
+Fix install command example (#2043)  It should be pip install PyGithub[integrations] not pip install PyGithub['integrations']
+Update sphinx-rtd-theme requirement from <0.6 to <1.1 (#2059)  Updates the requirements on [sphinx-rtd-theme](https://github.com/readthedocs/sphinx_rtd_theme) to permit the latest version. - [Release notes](https://github.com/readthedocs/sphinx_rtd_theme/releases) - [Changelog](https://github.com/readthedocs/sphinx_rtd_theme/blob/master/docs/changelog.rst) - [Commits](https://github.com/readthedocs/sphinx_rtd_theme/compare/0.1.8...1.0.0)  --- updated-dependencies: - dependency-name: sphinx-rtd-theme   dependency-type: direct:production ...  Signed-off-by: dependabot[bot] <support@github.com>  Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Bump codecov/codecov-action from 1 to 2.1.0 (#2058)  Bumps [codecov/codecov-action](https://github.com/codecov/codecov-action) from 1 to 2.1.0. - [Release notes](https://github.com/codecov/codecov-action/releases) - [Changelog](https://github.com/codecov/codecov-action/blob/master/CHANGELOG.md) - [Commits](https://github.com/codecov/codecov-action/compare/v1...v2.1.0)  --- updated-dependencies: - dependency-name: codecov/codecov-action   dependency-type: direct:production   update-type: version-update:semver-major ...  Signed-off-by: dependabot[bot] <support@github.com>  Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+"Fix AuthenticatedUser ReplayData with parameters (#2074)  A recently merged change modified AuthenticatedUser.get_notifications() in how it passes boolean parameters, but did not modify the replay data. Do so now."
+Removed duplicate code (#2060)  Remove a duplicate line in the CheckRun class.
+IssueEvent: add missing type hints (#2046)  Add two missing properties to IssueEvents type hints  Fixes #2039
+"Fix: #1671 Convert Python Bool to API Parameter for Authenticated User Notifications (#2001)  The parameters 'all' and 'participating' for AuthenticatedUser.get_notifications() should be lower case strings, not textual forms of a boolean.  Fixes: #1671"
+"Fix type of NamedUser.name (#2050)  The `name` attribute of a `NamedUser` is `None` if the user did not set a name in their GitHub profile, but this was not reflected in the type."
+Merge pull request #2011 from marksweb/fix/2009  Fixed links to github docs
+Fixed links to github docs. [#2009]
+"Remove language_version for black (#1968)  When black was added, we did not want to run it under Python 3.5, since upstream did not support it. We no longer support Python 3.5 ourselves, so we no longer need to restrict the version black uses."
+"Add types libraries to lint deps (#1975)  It appears recently that typing information for jwt and requests has been split out into seperate projects on pypi, namely types-jwt and types-requests. Since we utilise calling functions in their namespace, we need to install them otherwise mypy will fail."
+"Do not transform requestHeaders when logging (#1965)  Requester.__log() sanitizes the headers of the request so that authentication details are not logged, but this has the side effect of meaning that future requests that use the same Requester object will fail. Usually, this is perfectly fine, since almost every method will only make one request -- where this falls down is when we make another after a redirect. Make a copy of the requestHeaders, and sanitize those.  Fixes #1959"
+"Add type to OrderedDict (#1954)  OrderedDict needs to be typed just like Dict needs to be typed.  The OrderedDict ""input"" variable key and value are used to append to a string without any processing, so it seems unlikely that something other than a string would be valid."
+"Add Commit.get_pulls() to pyi (#1958)  Commit.get_pulls() is missing from the typing information, add it."
+"Adding headers in GithubException is a breaking change (#1931)  Since exporting headers in GithubException might require passing them in a constructor for client code, shift it as a breaking change so users watch out for it."
+"Fix commit message typo in changelog (#1930)  It appears we run codespell over all documentation, so common typos are picked up by CI. In other news, I must remember to run lint before creating a release."
+Publish version 1.55
+"Do not import from unpackaged paths in typing (#1926)  The tests path is not part of the shipped project, thus this type cannot be checked by users of this project.  The correct type in place of the type imported from tests appears to be Optional[     Union[HTTPRequestsConnectionClass, HTTPSRequestsConnectionClass] ]"
+"Implement hash for CompletableGithubObject (#1922)  Since CompletableGithubObject already uses its URL attribute to implement equality, extend it to also use that attribute for hashing.  Fixes #1826"
+"Use property decorator to improve typing compatibility (#1925)  As a property these functions are expected to be accessed without the private __get_ and __set_ functions, however while the functions are typed, the property is not, and mypy shows an attribute error.  As this codebase no-longer requires support for python versions without support for @property.setter(2.6?) this updates the functions to use decorators and updates the type files to reflect the attribute existence."
+Fix :rtype: directive (#1927)  Fixes a missing colon after :rtype in the ProjectColumn docs.
+"Update most URLs to docs.github.com (#1896)  Now that GitHub have moved their documentation from developer.github.com, we should update our links. I have also tried to update the call strings to their new format, but since it was done via regex, some of them may not match exactly."
+"key_id could be int on Github Enterprise (#1894)  * PublicKey.key_id can also be int, as well as str  Fixes #1878"
+Adjust to Github API changes regarding emails (#1890)  Handle AuthenticatedUser.get_emails() correctly with the GitHub API changes.  Fixes #1852
+"Tighten asserts for new Permission tests (#1893)  The recently merged code checking attributes on Permissions overeagerly used assertEqual for everything, switch to the more appropriate methods."
+"Adding attributes ""maintain"" and ""triage"" to class ""Permissions"" (#1810)  * Adding attributes ""maintain"" and ""triage"" to class ""github.Permissions.Permissions""  * Fix for failed test due to extended attribute list  * Adding new simplistic test case for class Permissions  Fixes #1809"
+Add default arguments to Workflow method type annotations (#1857)  The type annotations for Workflow.create_dispatch() and Workflow.get_runs() do not include the fact that some of the arguments have default values
+"Re-raise the exception when failing to parse JSON (#1892)  Since GitHub has the bad manners to return bare strings for some API endpoints, one sharp edge has been that JSON decoding errors were masked since we wrap the string in a dictionary. However, this makes it difficult to debug malformed JSON in replay data, so re-raise the exception if the first character is a { or [ (IE, it's an object or list.)"
+Allow adding attributes at the end of the list (#1807)  * Allow adding attributes at the end of the list / fix for issue #1806  * Update as per review comments
+Updating links to Github documentation for deploy keys (#1850)  * Updating links to Github documentation for deploy keys  There are a couple of links to http://developer.github.com/v3/repos/keys/ and I believe these should be going to http://developer.github.com/v3/repos/#deploy-keys. I've updated the docstrings in this file appropriately.
+Update PyJWT Version to 2.0+ (#1891)  * Update PyJWT version * Fix `GitRelease.testUploadAssetWithName` test   MIME type wasn't as expected  Fixes #1832
+"Use right variable in both get_check_runs() (#1889)  Both CheckSuite and Commit have a get_check_runs() method that allows filtering by a string -- the original code did not check for it, and never added it to the query string since it checked the wrong variable. Check the right variable and re-record the replay data.  Fixes #1843"
+fix bad assertions in github.Project.edit (#1817)  The assertions in github.Project.edit looked like the result of a bad copy-paste operation: they were all making assertions about the `name` parameter. This commit fixes them so they are checking different parameters.
+"Remove client_id/client_secret authentication (#1888)  Authenticating via client_id and client_secret is dangerous, since they appended to the query string, and can be easily seen from the URL.  client_id/client_secret have been deprecated since May 2020, and ignored by GitHub since late 2020, so it's high time they were removed."
+"Export headers in GithubException (#1887)  Since the headers that led to an exception are also useful, firstly pass them into the constructor, and then export them in a property. Test one specific use case to make sure of coverage.  Fixes #1814"
+"Test repr() for PublicKey (#1879)  The new PublicKey tests did not test the repr() method, increase coverage by doing so."
+"Add support for deleting repository secrets (#1868)  When a previous commit added support for creating secrets on repository objects, support was not added to also remove them. Since the GitHub API does support that, add a method to do so."
+"Switch repository secrets to using f-strings (#1867)  New code written before we switched to f-strings need to get updated to using them, so do so."
+Manually fixing paths for codecov.io to cover all project files (#1813)  * Manually fixing paths for codecov.io to cover all project files  * Update codecov.yml  Fixes #1812  Co-authored-by: Steve Kowalik <steven@wedontsleep.org>
+Add missing links to project metadata (#1789)  Fixes: #1788
+"No longer show username and password examples (#1866)  With GitHub moving away from allowing authentication to the API using an username and password, update our documentation to remove it and rely on tokens. Perhaps we should link to how to create an API token, but that can be addressed later.  Fixes #1851"
+Adding github actions secrets (#1681)  * Fixed pre-commit issues  * Fixed mypy linting error  * Fix flake8 error  * Update PublicKey.py  * Update PublicKey.py  * Update setup.py  * Update setup.py  * Update requirements.txt  Co-authored-by: Liuyang Wan <tsfdye@gmail.com>  Co-authored-by: Liuyang Wan <tsfdye@gmail.com>
+fix get_user_issues (#1842)  AuthenticatedUser.get_user_issues() calls the wrong API endpoint.  Fixes #1841
+"Switch all string addition to using f-strings (#1774)  Now that we no longer support Python 3.5, stop using string addition everywhere it makes sense, and move to the best feature 3.6+ gives us, f-strings!"
+Merge pull request #1818 from apahim/define_pool_size  Make requests pool_size configurable
+"Enabling connetion pool_size definition  requests has a default connections pool of 10. Creating multiple threads will consume from that same pool, since the underlying implementation of the requests pool is a singletown.  Let's make the pool_size configurable, so clients can set the proper number for their use case when running multiple threads.  Signed-off-by: Amador Pahim <apahim@redhat.com>"
+"Always define the session adapter  This represents no change of behaviour, but it enables us to set more options to the adapter.  Signed-off-by: Amador Pahim <apahim@redhat.com>"
+Publish version 1.54.1
+"Pin pyjwt version (#1797)  * Pin pyjwt version  Pyjwt version is not fixed, which can cause syntax error for user since the release of breaking changes from pyjwt (https://pypi.org/project/PyJWT/#history)  * Update setup.py  Fixes #1796"
+"Ignore pyupgrade commit for git blame (#1785)  Since the pyupgrade commit makes a large amount of changes, ignore the commit by default with git blame."
+"Add pyupgrade to pre-commit configuration (#1783)  To help us switch to f-strings and other 3.6+ changes, add pyupgrade to our pre-commit configuration to keep the codebase clean."
+Merge pull request #1733 from dubois/main  Fix #1731: Incorrect annotation
+Fix #1731: Incorrect annotation
+"Drop support for Python 3.5 (#1770)  In preperation for starting to use 3.6+ only features, stop testing Python 3.5 in our CI, and bump our minimum required version."
+"Revert ""Pin requests to <2.25 as well (#1757)"" (#1763)  * Revert ""Pin requests to <2.25 as well (#1757)"" * Ensure httpretty is more recent than 1.0.3  This reverts commit d159425f36dc7f68766cc980e262e9287e5f111c."
+Merge pull request #1767 from pascal-hofmann/fix-repository-stubs  Fix stubs file for Repository
+Fix stubs file for Repository
+Publish version 1.54
+Add support for Check Suites (#1764)  * Add initial support for Check Suites * Add API call detail in CheckSuite.rerequest * Update Accept header with general instead of preview * Add 'get check runs' endpoint for CheckSuite with stubs * Add create check suite endpoint with stub * Update CheckSuite tests with creat check suite endpoint * Add update check suites preferences endpoint * Add repository preferences object and stub file * Add update check suite preferences tests  Needed for #1621  Co-authored-by: Raju Subramanian <coder@mahesh.net>
+"Add missing preview features of Deployment and Deployment Statuses API (#1674)  * Add missing preview features of Deployment and Deployment Statuses API   - Enable support for deployment status states in_progress and queued   - Add arguments production_environment and transient_environment to Repository.create_deployment()   - Add attributes production_environment and transient_environment to Deployment   - Use correct type in assertion for Deployment.payload   - Fix incorrect assertion for description in Deployment.create_status()   - Add arguments environment, environment_url, auto_inactive to Deployment.create_status()   - Add attribute environment_url to DeploymentStatus"
+"Correct typing for Commit.get_comments() (#1765)  Commit.get_comments() returns a PaginatedList of CommitComment instances, not commits.  Co-Authored-By: Raju Subramanian <coder@mahesh.net>"
+"Pin requests to <2.25 as well (#1757)  requests 2.26 and its requirements break httpretty (see gabrielfalcao/HTTPretty#409), so pin for the time being. Thanks to Sébastien Besson and Dhruv Manilawala for the debugging assistance."
+Add Support for Check Runs (#1727)  * Add CheckRun object and stub file * Add list of check runs endpoint for Commit * Add get check run endpoint for Repository * Add CheckRun test file and replay data files * Add CheckRunAnnotation object and stub file * Add create CheckRun API endpoint to Repository * Update and add new tests for CheckRun endpoint:
+"Remove older MainClass.get_installation() (#1738)  There are two get_installation() methods in MainClass, with different arguments. get_installation(owner, repo) is documented and tested, and get_installation(id) is neither. Remove it to avoid confusion."
+Added a method for getting a user by their id (#1691)  * Added a method for getting a user by their id  * Added get_user_by_id to MainClass stubs  Fixes #1615
+Fix #1742 - incorrect typehint for `Installation.id` (#1743)  * Fix #1742
+List new project in introduction (#1739)  Fixes #1677
+"Add py39 env to tox (#1740)  An earlier commit added Python 3.9 support to CI, but neglected to change tox.ini to support an environment, do so here."
+Add WorkflowRun.workflow_id (#1737)  Add the missing attribute WorkflowRun.workflow_id
+"Add support for Python 3.9 (#1735)  With Python 3.9 released, we should support it. A later commit will remove support for Python 3.5."
+Added support for the Self-Hosted actions runners API (#1684)  * Added data model for Self-Hosted Actions Runner  * Added function for getting self-hosted runners
+"Fix Branch protection status in the examples (#1729)  A long time ago when branch protection was changed, the example of checking if a branch is protected wasn't changed in the examples.  Fixes #1724"
+"Filter the DeprecationWarning in Team tests (#1728)  With 1c55be51743 merged, Team.set_repo_permission() now raises a DeprecationWarning, so filter it until the method is removed."
+Added get_installations() to Organizations (#1695)  * Added get_installations() to Organizations  Fixes #1694
+Fix #1507: Add new Teams: Add or update team repository endpoint (#1509)  * Add new Team.update_team_repository()  * Mark Team.set_repo_permission() as deprecated   Fixes #1507
+Added support for `Repository.get_workflow_runs` parameters (#1682)  * Added support for `Repository.get_workflow_runs` parameters  * Added anchor tag to docstring link  * Tests
+feat(pullrequest): add the rebaseable attribute (#1690)
+Add support for deleting reactions (#1708)  * Delete comment reactions  * Add test case  * update ignore-word-list  * Delete issue reactions  * Delete issue comment reactions  * Delete pull request comment reactions  * check status
+Merge pull request #1712 from s-t-e-v-e-n-k/inputgittreeelement-typing  Correct type hint for InputGitTreeElement.sha
+"Correct type hint for InputGitTreeElement.sha  InputGitTreeElement.sha was previously updated to accept None to allow files to be deleted, but the type hint was not updated.  Fixes #1707"
+"Ignore new black formatting commit for git blame (#1680)  To make git blame tagging easier to follow, ignore the commit that made sweeping changes with the new black version."
+"Format with new black (#1679)  Black is very opinionated, but sometimes those opinions change. Run the new black version across the codebase, and lock down the version used by pre-commit so we don't get surprised like this again."
+Add get_timeline() to Issue's type stubs (#1663)  Add get_timeline() to Issue's type stubs
+Publish version 1.53
+Test Organization.get_hook() (#1660)  Add a testcase for Organization.get_hook()
+Add method get_team_membership for user to Team  (#1658)  * - Add method get_team_membership for user  * add typing get_team_membership for member  Fixes #1657
+"Add typing files for OAuth classes (#1656)  The additional classes added for OAuth predated the inclusion of typing files, add them for the new classes."
+Fix Repository.create_repository_dispatch type signature (#1643)  * Fix Repository.create_repository_dispatch type signature  * Change from object to Any
+"PaginatedList's totalCount is 0 if no last page (#1641)  When calculating totalCount for PaginatedList, if the links data does not contain a last page, we can't know how many elements are contained in the list. Set it to 0 in that case.  Fixes #1614"
+Add initial support for Github Apps. (#1631)  * Add initial support for Github Apps.  Needed for #1621
+"Correct **kwargs typing for search_* (#1636)  It turns out typing for **kwargs is always Dict[str, Type], so only the type is required.  Fixes #1633"
+Add delete_branch_on_merge arg to Repository.edit type stub (#1639)  Add missing delete_branch_on_merge argument to Repository.edit() stub
+Fix type stub for MainClass.get_user (#1637)  -   Add `login` arg default value to stub to match source
+Add type stub for Repository.create_fork (#1638)  Add type stub for Repository.create_fork()
+"Correct Repository.create_pull typing harder (#1635)  It turns out if an argument is optional for an overloaded method, the type hints require the default argument specified to successfully match against the correct signature. Furthermore, the second kind of create_pull() does not support the draft argument at all, so remove it.  Fixes #1634"
+Publish version 1.52
+upload_asset with data in memory (#1601)  * Expose upload from memory functionality * Upload from memory basic test * Test for custom file like object * Reorganized existing release tests * Remove docstrings & comments from tests * Modify logic * Explain why encode ignores its argument  Fixes #1140
+Make Issue.closed_by nullable (#1629)
+Add support for workflow dispatch event (#1625)  * Add support for workflow dispatch event  Fixes: #1624
+"Do not check reaction_type before sending (#1592)  There is a bunch of repeated code checking reactions which has the issue that it can easily get out of date with what GitHub accepts. Drop the check, and rely on GitHub returning an error.  Fixes #1554"
+Various Github Action improvement (#1610)
+more flexible header splitting (#1616)  Co-authored-by: Liuyang Wan <tsfdye@gmail.com>
+Merge pull request #1021 from rigaspapas/implement-apps-oauth-endpoints  Implement OAuth for apps
+Create Dependabot config file (#1607)  Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+"Add support for deployment statuses (#1588)  * Added DeploymentStatus class * Added stubs for DeploymentStatus class * Fixed headers for DeploymentStatus.py * Added get/list/create deployment status methods * Added DeploymentStatus repr * Added attribute check tests for DeploymentStatus * Added ""create deployment status"" test * Added test for Deployment.get_statuses() * Added Deployment.get_status() method  Fixes #1586"
+Adds the 'twitter_username' attribute to NamedUser. (#1585)  * Adds the 'twitter_username' attribute to NamedUser.
+"Create WorkflowRun.timing namedtuple from the dict (#1587)  To stop non-deterministic dictionary ordering ruining our day on Python 3.5, create the namedtuple using the keys of the dictionary."
+Add missing properties to PullRequest.pyi (#1577)  Two missing attributes were added to PullRequest.pyi
+"Add support for Workflow Runs (#1583)  To build on the previous work supporting querying Workflows for GitHub Actions, add a class and relevant methods to support querying runs of a workflow."
+"More precise typing for Repository.create_pull (#1581)  The typing information for Repository.create_pull did no type checking of the arguments at all. Using the overload functionality, specify both styles of create_pull(). Drive-by a nearby function from using a generic dict to Dict[str, str]."
+Update sphinx-rtd-theme requirement from <0.5 to <0.6 (#1563)  Updates the requirements on [sphinx-rtd-theme](https://github.com/rtfd/sphinx_rtd_theme) to permit the latest version. - [Release notes](https://github.com/rtfd/sphinx_rtd_theme/releases) - [Changelog](https://github.com/readthedocs/sphinx_rtd_theme/blob/master/docs/changelog.rst) - [Commits](https://github.com/rtfd/sphinx_rtd_theme/compare/0.1.8...0.5.0)  Signed-off-by: dependabot-preview[bot] <support@dependabot.com>  Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+"More precise typing for MainClass.get_user() (#1575)  Use typing.overload for MainClass.get_user() since it can return two disparate types. Correct the docstring for it, as well as locking down Sphinx to <3 due to built docs issue and drive-by link correction.  Fixes #1550"
+Small documentation correction in Repository.py (#1565)  Class `github.Clone.Clone` doesn't exist and should reference `github.Clones.Clones` instead.
+"Remove ""api_preview"" parameter from type stubs and docstrings (#1559)"
+Upgrade actions/setup-python to v2 (#1555)  https://github.com/actions/setup-python/releases
+"Clean up tests for GitReleaseAsset (#1546)  The test class for GitReleaseAsset did not match the filename, was also the only class to include docstrings, and furthermore, repeated a lot of fetches in the replay data."
+"Repository.update_file() content also accepts bytes (#1543)  The typing information for the update_file() method's content parameter states it will only accept str, whereas it will accept both str and bytes.  Fixes #1542"
+Fix Repository.get_issues stub (#1540)  Fixes #1539
+"Check all arguments of NamedUser.get_repos() (#1532)  The two unit tests for NamedUser.get_repos() did not check all arguments, and this was the only method in the file that wasn't completly covered. Re-record the replay data while passing all arguments to the method."
+"Correct Workflow typing (#1533)  When Workflow support was added, the method calls were not added to the typing file for Repository, and somehow the class name for the Workflow typing file was incorrect."
+"Remove RateLimit.rate (#1529)  RateLimit.rate was first deprecated in v1.43.2, which was released 20 months ago. As that's a fairly generous deprecation period, remove it."
+"PullRequestReview is not a completable object (#1528)  While chasing coverage failures, I discovered PullRequestReview's do not send back a URL at all, which means firstly, the url property is not required because it will always be None, and secondly, the object can never be completed. I'm not certain why this change broke the test, but it looked brittle, refactor it to be clearer."
+"Test more attributes (#1526)  To increase coverage, sprinkle in some asserts for attributes that were not checked -- this uncovered a bug in Issue that two attributes were not properly initialized to NotSet."
+"Remove pointless setters in GitReleaseAsset (#1527)  This is the only class that includes property setters for two of the attributes, which are untested, and even if they were used, would have no impact since there is no method to submit the changes back to GitHub. Drop them."
+"Drop some unimplemented methods in GitRef (#1525)  There are two unimplemented methods in GitRef, which are mostly covered by Commit.get_statuses(), remove them."
+"Remove unneeded duplicate string checks in Branch (#1524)  There were multiple calls checking if an element of a list was a string or a string -- I suspect this pre-dates use of six in the code base, but let's clean it up."
+"Turn on coverage reporting for codecov (#1522)  Since we migrated from Travis to GitHub Actions, our coverage on codecov has been reporting as 0%, since uploading the .coverage file is a terrible idea. Turn on XML-based reporting, ignore the file and use that when we upload to codecov."
+"Drastically increase coverage by checking repr() (#1521)  A lot of our missing coverage is caused by not checking repr(), which is trivial enough to test against -- do so, and also clean up existing repr tests to look the same by calling repr(). Where it was trivial, add a few assertions about missing attributes."
+Fixed formatting of docstrings for `Repository.create_git_tag_and_release()` and `StatsPunchCard`. (#1520)
+"Remove Repository.topics (#1505)  The topics attribute has been replaced by Repository.get_topics(). To reduce user confusion, delete the attribute.  Fixes #1504"
+Small improvements to typing (#1517)  Work through some of the errors when running mypy with --strict.
+"Correct Repository.get_workflows() (#1518)  The API endpoint Repository.get_workflows() calls returns data in a list item, not directly, leading to some head scratching when calling it against GitHub. Re-record the replay data."
+docs(repository): correct releases link (#1514)
+"correct Repository.stargazers_count return type to int (#1513)  It appears this was a type annotation typo, as the type of the stargazers_count property has been int for a long time."
+"Fix two RST warnings in Webhook.rst (#1512)  The final code block in the example is not Python code, and the underlines were incorrect, correct both."
+"Filter FutureWarning for 2 test cases (#1510)  There are two test cases that explicitly test with client_id and client_secret, which means pytest helpfully tells us about them after the test run concludes. We don't need to see them every run until we drop the arguments, so filter them out for now."
+"Raise a FutureWarning on use of client_{id,secret} (#1506)  client_id and client_secret are sent to GitHub encoded on the query string, which GitHub has firmly deprecated, so much so as to email people who are doing so. To discourage its use, raise a FutureWarning if they are specified.  Fixes #1500"
+Improve type signature for create_from_raw_data (#1503)  Previously you could call it only on Repository or NamedUser. Now you can call it with any GithubObject subclass -- and the type is carried through to the return value.
+"feat(column): move, edit and delete project columns (#1497)  Add support to move, edit and delete project columns."
+"Add support for Workflows (#1496)  To start supporting GitHub Actions, add the first part of that, Workflow, which encapsulates a workflow over the API, along with two methods on Repository to query them."
+Add create_repository_dispatch to typing files (#1502)
+Publish version 1.51
+feature: get the project column by id (#1466)  Add a method to fetch a project column by id.  Fixes #1057
+Improve type stubs (#1489)  * Add type stubs for GithubException subclasses  * Install type stubs per PEP 561  See https://mypy.readthedocs.io/en/stable/installed_packages.html#making-pep-561-compatible-packages.  * Make PaginatedList a generic type  * Add type stubs for __init__.py  * Add type stub for NamedUser.get_projects  * Add GithubObject superclasses to type stubs  Fixes #1490
+Fix typo in PullRequest.rst (#1494)
+Add OAuth support for GitHub applications  Create the ApplicationOAuth class which is responsible for handling a GitHub application's OAuth authorization process.
+Create AccessToken entity  This class is used to represent access tokens created from a successful OAuth authorization process.
+Extend installation attributes
+Drop Travis in favor of Github workflow (#1488)  * Drop Travis CI  * Update DEPLOY.md about new workflow of uploading new version to PyPI  * Upload coverage data to Codecov  Co-Authored-By: Steve Kowalik <steven@wedontsleep.org>
+Publish version 1.50
+Disable travis publish to PyPI
+Use Github action to upload to PyPI on new release (#1487)
+Github workflow improvement (#1486)
+Update Travis badge with Github Action badge
+Actually use the Python version in GA workflow (#1485)  It appears that the Python versions in our strategy matrix are not used unless we drag them down into the steps. Do so now.
+Fix all type issues flagged by mypy (#1484)
+Deprecate Gitter and add slack badge with auto invitation
+Drop use of shadow-cat for draft PRs (#1469)
+Add and handle the maintainer_can_modify attribute in PullRequest (#1465)
