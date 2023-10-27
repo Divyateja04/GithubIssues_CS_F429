@@ -52,21 +52,5 @@ for i in tqdm(range(repo.get_commits().totalCount)):
     pd.DataFrame(commit_messages).to_csv(
         "commit_messages.csv", index=False, header=None)
 
-issues = []
-
-# Iterate per issue
-for i in tqdm(range(repo.get_issues().totalCount)):
-    issue = repo.get_issues()[i]
-    # Get the issue title
-    issue_obj = []
-    # Append the title and body to the list
-    issue_obj.append(issue.title)
-    issue_obj.append(issue.body)
-    # Append the issue to the list
-    issues.append(issue_obj)
-
-    pd.DataFrame(issues).to_csv("issue_titles.csv", index=False, header=None)
-
-
 # To close connections after use
 g.close()
