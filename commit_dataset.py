@@ -48,9 +48,9 @@ for i in tqdm(range(repo.get_commits().totalCount)):
                 file_pairs.append((files[i], files[j]))
 
     pd.DataFrame(file_pairs).to_csv(
-        "file_pairs.csv", index=False, header=None)
+        "data/file_pairs.csv", index=False, header=None)
     pd.DataFrame(commit_messages).to_csv(
-        "commit_messages.csv", index=False, header=None)
+        "data/commit_messages.csv", index=False, header=None)
 
 # To close connections after use
 g.close()

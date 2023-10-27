@@ -35,7 +35,8 @@ for i in tqdm(range(repo.get_issues().totalCount)):
     # Append the issue to the list
     issues.append(issue_obj)
 
-    pd.DataFrame(issues).to_csv("issue_titles.csv", index=False, header=None)
+    pd.DataFrame(issues).to_csv(
+        "data/issue_titles.csv", index=False, header=None)
 
 
 # To close connections after use
