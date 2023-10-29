@@ -36,7 +36,7 @@ class SkipgramModel(nn.Module):
         super(SkipgramModel, self).__init__()
         self.embedding = nn.Embedding(vocab_size, embedding_dim)
         self.linear = nn.Linear(embedding_dim, embedding_dim * 3)
-        self.linear2 = nn.Linear(embedding_dim * 3, vocab_size)
+        self.linear2 = nn.Linear(embedding_dim * 3, embedding_dim)
 
     def forward(self, inputs__):
         embeds = self.embedding(inputs__)
