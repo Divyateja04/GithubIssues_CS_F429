@@ -1,0 +1,52 @@
+[
+    {
+        "commit": "Fix parameter order according to Version 2.1.0 (#2786)  Version 2.1.0 introduced a breaking change to the `Repository.create_pull` method. This PR updates the example provided in the docs: https://pygithub.readthedocs.io/en/latest/examples/PullRequest.html#create-a-new-pull-request",
+        "files": [
+            "doc/examples/PullRequest.rst"
+        ]
+    },
+    {
+        "commit": "Add missing GitHub classes to docs (#2783)",
+        "files": [
+            ".readthedocs.yml",
+            "doc/conf.py",
+            "doc/examples/MainClass.rst",
+            "doc/github_integration.rst",
+            "doc/reference.rst",
+            "doc/utilities.rst",
+            "github/Auth.py",
+            "github/RepositoryAdvisory.py"
+        ]
+    },
+    {
+        "commit": "Fix mypy error with urllib3>=2.0.0a1 by ignoring (#2779)",
+        "files": [
+            "github/GithubRetry.py"
+        ]
+    },
+    {
+        "commit": "Release 2.1.1 (#2777)",
+        "files": [
+            "doc/changes.rst"
+        ]
+    },
+    {
+        "commit": "Fix rst format in `doc/changes.rst` (#2776)",
+        "files": [
+            "doc/changes.rst",
+            "setup.py"
+        ]
+    },
+    {
+        "commit": "Require urllib 1.26.0 or greater (#2774)",
+        "files": [
+            "requirements.txt"
+        ]
+    },
+    {
+        "commit": "Fix pypi-release workflow, allow for manual run (#2771)",
+        "files": [
+            ".github/workflows/pypi-release.yml"
+        ]
+    }
+]
