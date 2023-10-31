@@ -1,3 +1,4 @@
+import json
 import os
 # Github API v3
 from github import Github
@@ -45,16 +46,14 @@ try:
             # Append the filename to the list
             files.append(file.filename)
 
-        # Create pairs between all the files for correlations
-        for i in range(len(files)):
-            for j in range(len(files)):
-                if files[i] != files[j]:
-                    file_pairs.append((files[i], files[j]))
+        commit_object = {
+            "commit": commit_message,
+            "files": files
+        }
 
-        pd.DataFrame(file_pairs).to_csv(
-            "data/file_pairs.csv", index=False, header=None)
-        pd.DataFrame(commit_messages).to_csv(
-            "data/commit_messages.csv", index=False, header=None)
+        # Save the commits to a json file
+        with open('data/commits.json', 'w') as f:
+            json.dump(commit_messages, f, indent=4)
 
 except Exception as e:
     print(e)

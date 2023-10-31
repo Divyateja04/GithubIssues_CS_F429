@@ -1,10 +1,9 @@
 import os
+import json
 # Github API v3
 from github import Github
 # Authentication is defined via github.Auth
 from github import Auth
-# Import pandas to create a dataframe
-import pandas as pd
 # Import tqdm
 from tqdm import tqdm
 from dotenv import load_dotenv
@@ -35,9 +34,9 @@ for i in tqdm(range(repo.get_issues().totalCount)):
     # Append the issue to the list
     issues.append(issue_obj)
 
-    pd.DataFrame(issues).to_csv(
-        "data/issue_titles.csv", index=False, header=None)
-
+# Save the issues to a json file
+with open('data/issues.json', 'w') as f:
+    json.dump(issues, f, indent=4)
 
 # To close connections after use
 g.close()
