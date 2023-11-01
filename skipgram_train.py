@@ -25,16 +25,25 @@ logging.info(device)
 
 # Extracting and opening dataset
 DATASET_LOCATION = "./data/"
-file_pairs = pd.read_csv(
-    DATASET_LOCATION + "file_pairs_1.csv", header=None, index_col=False)
+with open(os.path.join(DATASET_LOCATION, "commits.json"), "r") as f:
+    commit_data = json.load(f)
 
-logging.info(f"The number of pairs is: {len(file_pairs)}")
+logging.info(f"The number of commits is: {len(commit_data)}")
+
+file_pairs = []
+for commit in commit_data:
+    for x in commit["files"]:
+        for y in commit["files"]:
+            if x != y:
+                file_pairs.append((x, y))
+
+logging.info(f"The number of file pairs is: {len(file_pairs)}")
 
 file_pair_indices = {}
 
 # Creating a dictionary of all the unique files
 counter = 0
-for (x, y) in file_pairs.values:
+for (x, y) in file_pairs:
     if x not in file_pair_indices.keys():
         file_pair_indices[x] = counter
         counter += 1
@@ -42,11 +51,13 @@ for (x, y) in file_pairs.values:
         file_pair_indices[y] = counter
         counter += 1
 
-
+logging.info(f"The number of unique files is: {len(file_pair_indices)}")
 # Custom Dataset class which contains all the file pairs
+
+
 class CustomDataset(Dataset):
     def __init__(self):
-        self.file_pairs = list(file_pairs.values)
+        self.file_pairs = file_pairs
 
     def __len__(self):
         return len(self.file_pairs)
@@ -61,7 +72,7 @@ class CustomDataset(Dataset):
 customDataset = CustomDataset()
 
 # Custom Dataloader
-dataLoader = DataLoader(customDataset, batch_size=128, shuffle=True)
+dataLoader = DataLoader(customDataset, batch_size=64, shuffle=True)
 
 
 # Skip gram Model
@@ -90,7 +101,7 @@ logging.info(model)
 
 # Loss functions and optimizer
 loss_fn = nn.CrossEntropyLoss()
-optimizer = torch.optim.SGD(model.parameters(), lr=0.001, weight_decay=5e-4)
+optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 
 
 #  Training the model
