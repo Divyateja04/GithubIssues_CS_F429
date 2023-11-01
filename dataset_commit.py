@@ -30,15 +30,16 @@ last_processed_commit = 0
 
 try:
     # Iterate per commit
+    commits = repo.get_commits()
     for i in tqdm(range(last_processed_commit, repo.get_commits().totalCount)):
         last_processed_commit = i
-        commit = repo.get_commits()[i]
+        commit = commits[i]
         # Get the commit message
         commit_message = commit.commit.message
         # remove new lines
         commit_message = commit_message.replace("\r\n", " ").replace("\n", " ")
         # Append the commit message to the list
-        commit_messages.append(commit_message)
+        # commit_messages.append(commit_message)
         # Keep track of the files in the commit
         files = []
         # Iterate per file in the commit
@@ -51,9 +52,10 @@ try:
             "files": files
         }
 
-        # Save the commits to a json file
-        with open('data/commits.json', 'w') as f:
-            json.dump(commit_messages, f, indent=4)
+        commit_messages.append(commit_object)
+    # Save the commits to a json file
+    with open('data/commits.json', 'w') as f:
+        json.dump(commit_messages, f, indent=4)
 
 except Exception as e:
     print(e)
