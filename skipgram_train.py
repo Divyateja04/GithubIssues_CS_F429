@@ -2,7 +2,6 @@
 import os
 from datetime import datetime
 import pandas as pd
-import json
 import logging
 
 import torch
@@ -25,19 +24,7 @@ logging.info(device)
 
 # Extracting and opening dataset
 DATASET_LOCATION = "./data/"
-with open(os.path.join(DATASET_LOCATION, "commits.json"), "r") as f:
-    commit_data = json.load(f)
-
-logging.info(f"The number of commits is: {len(commit_data)}")
-
-file_pairs = []
-for commit in commit_data:
-    for x in commit["files"]:
-        for y in commit["files"]:
-            if x != y:
-                file_pairs.append((x, y))
-
-logging.info(f"The number of file pairs is: {len(file_pairs)}")
+file_pairs = pd.read_csv(DATASET_LOCATION + "file_pairs.csv").values.tolist()
 
 file_pair_indices = {}
 
@@ -53,7 +40,6 @@ for (x, y) in file_pairs:
 
 logging.info(f"The number of unique files is: {len(file_pair_indices)}")
 # Custom Dataset class which contains all the file pairs
-
 
 class CustomDataset(Dataset):
     def __init__(self):
@@ -72,7 +58,7 @@ class CustomDataset(Dataset):
 customDataset = CustomDataset()
 
 # Custom Dataloader
-dataLoader = DataLoader(customDataset, batch_size=64, shuffle=True)
+dataLoader = DataLoader(customDataset, batch_size=512, shuffle=True)
 
 
 # Skip gram Model
