@@ -1,9 +1,14 @@
+# Import the libraries
+import json
 import torch
+import pandas as pd
+from tqdm import tqdm
 from transformers import PegasusForConditionalGeneration, PegasusTokenizer
 
+# model name
 model_name = 'tuner007/pegasus_summarizer'
-
 torch_device = 'cuda' if torch.cuda.is_available() else 'cpu'
+COMMIT_LIMIT = 20
 
 tokenizer = PegasusTokenizer.from_pretrained(model_name)
 model = PegasusForConditionalGeneration.from_pretrained(model_name).to(torch_device)
@@ -13,3 +18,23 @@ def get_response(input_text):
   gen_out = model.generate(**batch,max_length=128,num_beams=5, num_return_sequences=1, temperature=1.5)
   output_text = tokenizer.batch_decode(gen_out, skip_special_tokens=True)
   return output_text
+
+# Open commits.json file
+with open('data/commits.json', 'r') as f:
+    commits = json.load(f)
+    
+commit_summaries = []
+
+# Loop through commits and generate a paragraph for every 10 commits
+counter = 0
+temp_text = ""
+for x in tqdm(commits):
+  if counter < COMMIT_LIMIT:
+    temp_text += x['commit'] + " "
+    counter += 1
+  else:
+    commit_summaries.append(get_response(temp_text)[0])
+    temp_text = ""
+    counter = 0
+    pd.DataFrame(commit_summaries).to_csv('data/commit_summaries.csv', index=False, header=False)
+    
