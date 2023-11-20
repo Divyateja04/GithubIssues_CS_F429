@@ -9,19 +9,31 @@ import torch.nn.functional as F
 
 # Importing the data
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-print(f"The device being used is: {device}")
 
 # Extracting and opening dataset
 DATASET_LOCATION = "./data/"
-file_pairs = pd.read_csv(
+file_pairs1 = pd.read_csv(
     DATASET_LOCATION + "file_pairs_1.csv", header=None, index_col=False)
-print(f"The number of pairs is: {len(file_pairs)}")
+file_pairs2 = pd.read_csv(
+    DATASET_LOCATION + "file_pairs_2.csv", header=None, index_col=False)
+
 
 # Creating a dictionary of all the unique files
 file_pair_indices = {}
 
 counter = 0
-for (x, y) in file_pairs.values:
+# Creating a dictionary of all the unique files for this repo
+file_pair_indices = {}
+
+counter = 0
+for (x, y) in file_pairs1.values:
+    if x not in file_pair_indices.keys():
+        file_pair_indices[x] = counter
+        counter += 1
+    if y not in file_pair_indices.keys():
+        file_pair_indices[y] = counter
+        counter += 1
+for (x, y) in file_pairs2.values:
     if x not in file_pair_indices.keys():
         file_pair_indices[x] = counter
         counter += 1
@@ -53,28 +65,31 @@ class SkipgramModel(nn.Module):
 model = SkipgramModel(len(file_pair_indices), 128)
 model.load_state_dict(
     torch.load(
-        "./models/commit_skipgram.pth", map_location=torch.device(device)
+        "./skipgram/commit_skipgram.pth", map_location=torch.device(device)
     )
 )
 model.eval()
 
 
 # Similarity Check
-def similarity_check(target, vocabulary):
+def similarity_check(target):
+    if target not in file_pair_indices.keys():
+        return []
+    
     # Predict what vector comes for the given target
     target_vector = model.prediction(
         torch.tensor(file_pair_indices[target]).to(device))
 
     similarities = []
     # For every other vector in the vocabulary
-    for i in tqdm(range(len(vocabulary))):
+    for i in tqdm(range(len(file_pair_indices))):
         # If it's same as the target, skip
-        if list(vocabulary)[i] == target:
+        if list(file_pair_indices)[i] == target:
             continue
 
         # Find the vector embedding of the other vector
         vector = model.prediction(
-            torch.tensor(file_pair_indices[list(vocabulary)[i]]).to(device)
+            torch.tensor(file_pair_indices[list(file_pair_indices)[i]]).to(device)
         )
 
         # Find the cosine similarity between the two vectors
@@ -82,11 +97,6 @@ def similarity_check(target, vocabulary):
             vector, target_vector, dim=0).data.tolist()
 
         # Append the cosine similarity and the word to the similarities list
-        similarities.append([list(vocabulary)[i], cosine_sim])
+        similarities.append([list(file_pair_indices)[i], cosine_sim])
 
     return sorted(similarities, key=lambda x: x[1], reverse=True)[:20]
-
-
-sims = similarity_check("github/PullRequestReview.py", file_pair_indices)
-for sim in sims:
-    print(sim)

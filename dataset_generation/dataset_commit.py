@@ -15,11 +15,8 @@ load_dotenv()
 
 # using an access token
 auth = Auth.Token(os.getenv("GITHUB_TOKEN"))
-
-# First create a Github instance:
-# Public Web Github
+# We create a Github instance:
 g = Github(auth=auth)
-
 # Get the repository that you want to get the data from
 repo = g.get_repo("PyGithub/PyGithub")
 
