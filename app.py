@@ -3,6 +3,8 @@ import json
 import os
 from tqdm import tqdm
 import pandas as pd
+from dotenv import load_dotenv
+
 # Pytorch
 import torch
 import torch.nn.functional as F
@@ -14,6 +16,7 @@ from github import Auth
 from skipgram.skipgram_test import similarity_check
 
 print("Initializing...")
+load_dotenv()
 # ======================CUDA Part======================
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 # ======================Summarizer Part======================
@@ -55,17 +58,19 @@ def generate_commit_summary():
             # remove new lines
             commit_message = commit_message.replace("\r\n", " ").replace("\n", " ")
             # remove double quotes and spaces
-            commit_message = commit_message.replace("\"", "").replace(" ", "")            
+            commit_message = commit_message.replace("\"", "").replace("  ", "")            
             # Append the commit message to the list
             commit_messages.append(commit_message)
+            
+        # join all the commit messages into one string
+        commits_combination = ", ".join(commit_messages)
+        # generate summary
+        print("Here is the most recent commit summary: ")
+        print(get_summary_response(commits_combination)[0])
     except Exception as e:
         print("Could not retrieve commit messages")
+        print(e)
     
-    # join all the commit messages into one string
-    commits_combination = ", ".join(commit_messages)
-    # generate summary
-    print("Here is the most recent commit summary: ")
-    print(get_summary_response(commits_combination)[0])
 
 '''
 This function uses the skipgram model to find file correlations
