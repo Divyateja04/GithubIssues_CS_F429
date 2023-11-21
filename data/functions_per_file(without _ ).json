@@ -1,0 +1,558 @@
+[
+    {
+        "fileName": "AccessToken.py",
+        "functions": "token,  type,  scope,  created,  expires in,  expires at,  refresh token,  refresh expires in,  refresh expires at,   use Attributes"
+    },
+    {
+        "fileName": "AppAuthentication.py",
+        "functions": ""
+    },
+    {
+        "fileName": "ApplicationOAuth.py",
+        "functions": "client id,  client secret,   use Attributes,  get login url,  get access token,  get app user auth,  refresh access token,   check Error"
+    },
+    {
+        "fileName": "Artifact.py",
+        "functions": "archive download url,  created at,  expired,  expires at,  head sha,  id,  name,  node id,  size in bytes,  updated at,  url,  workflow run,  delete,   use Attributes"
+    },
+    {
+        "fileName": "Auth.py",
+        "functions": "token type,  token,  username,  password,  token type,  token,  login,  username,  password,  token type,  token,  token type,  app id,  private key,  token,  get installation auth,  create jwt,  token,  with Requester,  app id,  private key,  installation id,  token permissions,  token type,  token,   is expired,   get installation authorization,  token type,  token,  with Requester,   is expired,   refresh,  expires at,  refresh token,  refresh expires at,  username,  login,  password,  with Requester"
+    },
+    {
+        "fileName": "AuthenticatedUser.py",
+        "functions": "avatar url,  bio,  blog,  collaborators,  company,  created at,  disk usage,  email,  events url,  followers,  followers url,  following,  following url,  gists url,  gravatar id,  hireable,  html url,  id,  location,  login,  name,  node id,  organizations url,  owned private repos,  plan,  private gists,  public gists,  public repos,  received events url,  repos url,  site admin,  starred url,  subscriptions url,  total private repos,  type,  updated at,  url,  two factor authentication,  add to emails,  add to following,  add to starred,  add to subscriptions,  add to watched,  create authorization,  create fork,  create repo from template,  create gist,  create key,  create project,  create repo,  edit,  get authorization,  get authorizations,  get emails,  get events,  get followers,  get following,  get gists,  get issues,  get user issues,  get key,  get keys,  get notification,  get notifications,  get organization events,  get orgs,  get repo,  get repos,  get starred,  get starred gists,  get subscriptions,  get teams,  get watched,  get installations,  has in following,  has in starred,  has in subscriptions,  has in watched,  mark notifications as read,  remove from emails,  remove from following,  remove from starred,  remove from subscriptions,  remove from watched,  accept invitation,  get invitations,  create migration,  get migrations,  get organization membership,   use Attributes"
+    },
+    {
+        "fileName": "Authorization.py",
+        "functions": "app,  created at,  id,  note,  note url,  scopes,  token,  updated at,  url,  delete,  edit,   use Attributes"
+    },
+    {
+        "fileName": "AuthorizationApplication.py",
+        "functions": "name,  url,   use Attributes"
+    },
+    {
+        "fileName": "Autolink.py",
+        "functions": "id,  key prefix,  url template,  is alphanumeric,   use Attributes"
+    },
+    {
+        "fileName": "Branch.py",
+        "functions": "commit,  name,  protected,  protection url,   use Attributes,  get protection,  edit protection,  remove protection,  get required status checks,  edit required status checks,  remove required status checks,  get required pull request reviews,  edit required pull request reviews,  remove required pull request reviews,  get admin enforcement,  set admin enforcement,  remove admin enforcement,  get user push restrictions,  get team push restrictions,  add user push restrictions,  replace user push restrictions,  remove user push restrictions,  add team push restrictions,  replace team push restrictions,  remove team push restrictions,  remove push restrictions,  get required signatures,  add required signatures,  remove required signatures"
+    },
+    {
+        "fileName": "BranchProtection.py",
+        "functions": "url,  required status checks,  enforce admins,  required linear history,  required pull request reviews,  get user push restrictions,  get team push restrictions,   use Attributes"
+    },
+    {
+        "fileName": "CheckRun.py",
+        "functions": "app,  check suite id,  completed at,  conclusion,  details url,  external id,  head sha,  html url,  id,  name,  node id,  output,  pull requests,  started at,  status,  url,  get annotations,  edit,   use Attributes"
+    },
+    {
+        "fileName": "CheckRunAnnotation.py",
+        "functions": "annotation level,  end column,  end line,  message,  path,  raw details,  start column,  start line,  title,   use Attributes"
+    },
+    {
+        "fileName": "CheckRunOutput.py",
+        "functions": "annotations count,  annotations url,  summary,  text,  title,   use Attributes"
+    },
+    {
+        "fileName": "CheckSuite.py",
+        "functions": "after,  app,  before,  check runs url,  conclusion,  created at,  head branch,  head commit,  head sha,  id,  latest check runs count,  pull requests,  repository,  status,  updated at,  url,  rerequest,  get check runs,   use Attributes"
+    },
+    {
+        "fileName": "Clones.py",
+        "functions": "timestamp,  count,  uniques,   use Attributes"
+    },
+    {
+        "fileName": "CodeScanAlert.py",
+        "functions": "number,  rule,  tool,  created at,  dismissed at,  dismissed by,  dismissed reason,  url,  html url,  instances url,  most recent instance,  state,  get instances,   use Attributes"
+    },
+    {
+        "fileName": "CodeScanAlertInstance.py",
+        "functions": "ref,  analysis key,  environment,  state,  commit sha,  message,  location,  classifications,   use Attributes"
+    },
+    {
+        "fileName": "CodeScanAlertInstanceLocation.py",
+        "functions": "  str  ,  path,  start line,  start column,  end line,  end column,   use Attributes"
+    },
+    {
+        "fileName": "CodeScanRule.py",
+        "functions": "id,  name,  severity,  security severity level,  description,   use Attributes"
+    },
+    {
+        "fileName": "CodeScanTool.py",
+        "functions": "name,  version,  guid,   use Attributes"
+    },
+    {
+        "fileName": "Commit.py",
+        "functions": "author,  comments url,  commit,  committer,  files,  html url,  parents,  sha,  stats,  url,  create comment,  create status,  get comments,  get statuses,  get combined status,  get pulls,  get check runs,  get check suites,   identity,   use Attributes"
+    },
+    {
+        "fileName": "CommitCombinedStatus.py",
+        "functions": "state,  sha,  total count,  commit url,  url,  repository,  statuses,   use Attributes"
+    },
+    {
+        "fileName": "CommitComment.py",
+        "functions": "body,  commit id,  created at,  html url,  id,  line,  path,  position,  updated at,  url,  user,  delete,  edit,  get reactions,  create reaction,  delete reaction,   use Attributes"
+    },
+    {
+        "fileName": "functionstats.py",
+        "functions": "additions,  deletions,  total,   use Attributes"
+    },
+    {
+        "fileName": "functionstatus.py",
+        "functions": "created at,  creator,  description,  id,  state,  context,  target url,  updated at,  url,   use Attributes"
+    },
+    {
+        "fileName": "Comparison.py",
+        "functions": "ahead by,  base commit,  behind by,  functions,  diff url,  files,  html url,  merge base commit,  patch url,  permalink url,  status,  total functions,  url,   use Attributes"
+    },
+    {
+        "fileName": "Consts.py",
+        "functions": ""
+    },
+    {
+        "fileName": "ContentFile.py",
+        "functions": "content,  decoded content,  download url,  encoding,  git url,  html url,  license,  name,  path,  repository,  sha,  size,  type,  url,  text matches,   use Attributes"
+    },
+    {
+        "fileName": "CWE.py",
+        "functions": "cwe id,  name,   use Attributes"
+    },
+    {
+        "fileName": "Deployment.py",
+        "functions": "id,  ref,  url,  sha,  task,  payload,  original environment,  environment,  production environment,  transient environment,  description,  creator,  created at,  updated at,  statuses url,  repository url,  get statuses,  get status,  create status,   get accept header,   use Attributes"
+    },
+    {
+        "fileName": "DeploymentStatus.py",
+        "functions": "created at,  creator,  deployment url,  description,  environment,  environment url,  repository url,  state,  target url,  updated at,  url,  id,  node id,   use Attributes"
+    },
+    {
+        "fileName": "Download.py",
+        "functions": "accesskeyid,  acl,  bucket,  content type,  created at,  description,  download count,  expirationdate,  html url,  id,  mime type,  name,  path,  policy,  prefix,  redirect,  s3 url,  signature,  size,  url,  delete,   use Attributes"
+    },
+    {
+        "fileName": "Enterprise.py",
+        "functions": "enterprise,  url,  get consumed licenses,   use Attributes"
+    },
+    {
+        "fileName": "EnterpriseConsumedLicenses.py",
+        "functions": "total seats consumed,  total seats purchased,  enterprise,  url,  get users,   use Attributes"
+    },
+    {
+        "fileName": "Environment.py",
+        "functions": "created at,  html url,  id,  name,  node id,  protection rules,  updated at,  url,  deployment branch policy,   use Attributes"
+    },
+    {
+        "fileName": "EnvironmentDeploymentBranchPolicy.py",
+        "functions": "protected branches,  custom branch policies,   use Attributes,   asdict"
+    },
+    {
+        "fileName": "EnvironmentProtectionRule.py",
+        "functions": "id,  node id,  type,  reviewers,  wait timer,   use Attributes"
+    },
+    {
+        "fileName": "EnvironmentProtectionRuleReviewer.py",
+        "functions": "type,  reviewer,   use Attributes,   asdict"
+    },
+    {
+        "fileName": "Event.py",
+        "functions": "actor,  created at,  id,  org,  payload,  public,  repo,  type,   use Attributes"
+    },
+    {
+        "fileName": "File.py",
+        "functions": "additions,  blob url,  changes,  contents url,  deletions,  filename,  patch,  previous filename,  raw url,  sha,  status,   use Attributes"
+    },
+    {
+        "fileName": "Gist.py",
+        "functions": "comments,  comments url,  functions url,  created at,  description,  files,  fork of,  forks,  forks url,  git pull url,  git push url,  history,  html url,  id,  owner,  public,  updated at,  url,  user,  create comment,  create fork,  delete,  edit,  get comment,  get comments,  is starred,  reset starred,  set starred,   use Attributes"
+    },
+    {
+        "fileName": "GistComment.py",
+        "functions": "body,  created at,  id,  updated at,  url,  user,  delete,  edit,   use Attributes"
+    },
+    {
+        "fileName": "GistFile.py",
+        "functions": "content,  filename,  language,  raw url,  size,  type,   use Attributes"
+    },
+    {
+        "fileName": "GistHistoryState.py",
+        "functions": "change status,  comments,  comments url,  functions url,  committed at,  created at,  description,  files,  forks,  forks url,  git pull url,  git push url,  history,  html url,  id,  owner,  public,  updated at,  url,  user,  version,   use Attributes"
+    },
+    {
+        "fileName": "GitAuthor.py",
+        "functions": "date,  email,  name,   use Attributes"
+    },
+    {
+        "fileName": "GitBlob.py",
+        "functions": "content,  encoding,  sha,  size,  url,   use Attributes"
+    },
+    {
+        "fileName": "GitCommit.py",
+        "functions": "author,  committer,  html url,  message,  parents,  sha,  tree,  url,   identity,   use Attributes"
+    },
+    {
+        "fileName": "GithubApp.py",
+        "functions": "created at,  description,  events,  external url,  html url,  id,  name,  owner,  permissions,  slug,  updated at,  url,   use Attributes"
+    },
+    {
+        "fileName": "GithubException.py",
+        "functions": "message,  status,  data,  headers,    str  ,  actual value,  expected type,  transformation exception"
+    },
+    {
+        "fileName": "GithubIntegration.py",
+        "functions": "close,    enter  ,    exit  ,  get github for installation,   get headers,   get installed app,  create jwt,  get access token,  get installation,  get installations,  get org installation,  get repo installation,  get user installation,  get app installation,  get app"
+    },
+    {
+        "fileName": "GithubObject.py",
+        "functions": "is defined,  is undefined,  is optional,  is optional list,  value,  value,  remove unset items,  value,  value,  setCheckAfterInit Flag,   storeAndUse Attributes,  raw data,  raw headers,   parent Url,    makeSimple Attribute,    makeSimpleList Attribute,    makeTransformed Attribute,   makeString Attribute,   makeInt Attribute,   makeFloat Attribute,   makeBool Attribute,   makeDict Attribute,   makeTimestamp Attribute,   makeDatetime Attribute,   makeClass Attribute,   makeListOfStrings Attribute,   makeListOfInts Attribute,   makeListOfDicts Attribute,   makeListOfListOfStrings Attribute,   makeListOfClasses Attribute,   makeDictOfStringsToClasses Attribute,  etag,  last modified,  get use Attributes,   completeIf Needed,   completeIf Needed,    eq  ,    hash  ,    ne  ,   completeIfNot Set,   completeIf Needed,    complete,  update,  format params"
+    },
+    {
+        "fileName": "GithubRetry.py",
+        "functions": "new,  increment,  get content,    log,  get backoff time"
+    },
+    {
+        "fileName": "GitignoreTemplate.py",
+        "functions": "source,  name,   use Attributes"
+    },
+    {
+        "fileName": "GitObject.py",
+        "functions": "sha,  type,  url,   use Attributes"
+    },
+    {
+        "fileName": "GitRef.py",
+        "functions": "object,  ref,  url,  delete,  edit,   use Attributes"
+    },
+    {
+        "fileName": "GitRelease.py",
+        "functions": "id,  body,  title,  tag name,  target commitish,  draft,  prerelease,  author,  created at,  published at,  url,  upload url,  html url,  tarball url,  zipball url,  assets,  delete release,  update release,  upload asset,  upload asset from memory,  get assets,   use Attributes"
+    },
+    {
+        "fileName": "GitReleaseAsset.py",
+        "functions": "url,  id,  name,  label,  content type,  state,  size,  download count,  created at,  updated at,  browser download url,  uploader,  delete asset,  update asset,   use Attributes"
+    },
+    {
+        "fileName": "GitTag.py",
+        "functions": "message,  object,  sha,  tag,  tagger,  url,   use Attributes"
+    },
+    {
+        "fileName": "GitTree.py",
+        "functions": "sha,  tree,  url,   identity,   use Attributes"
+    },
+    {
+        "fileName": "GitTreeElement.py",
+        "functions": "mode,  path,  sha,  size,  type,  url,   use Attributes"
+    },
+    {
+        "fileName": "Hook.py",
+        "functions": "active,  config,  created at,  events,  id,  last response,  name,  test url,  updated at,  url,  ping url,  delete,  edit,  test,  ping,   use Attributes"
+    },
+    {
+        "fileName": "HookDelivery.py",
+        "functions": "id,  guid,  delivered at,  redelivery,  duration,  status,  status code,  event,  action,  installation id,  repository id,  url,   use Attributes,  headers,  payload,   use Attributes,  headers,  payload,   use Attributes,  request,  response,   use Attributes"
+    },
+    {
+        "fileName": "HookDescription.py",
+        "functions": "events,  name,  schema,  supported events,   use Attributes"
+    },
+    {
+        "fileName": "HookResponse.py",
+        "functions": "code,  message,  status,   use Attributes"
+    },
+    {
+        "fileName": "InputFileContent.py",
+        "functions": " identity"
+    },
+    {
+        "fileName": "InputGitAuthor.py",
+        "functions": " identity"
+    },
+    {
+        "fileName": "InputGitTreeElement.py",
+        "functions": " identity"
+    },
+    {
+        "fileName": "Installation.py",
+        "functions": "get github for installation,  id,  app id,  target id,  target type,  get repos,   use Attributes"
+    },
+    {
+        "fileName": "InstallationAuthorization.py",
+        "functions": "token,  expires at,  on behalf of,  permissions,  repository selection,   use Attributes"
+    },
+    {
+        "fileName": "Invitation.py",
+        "functions": "id,  permissions,  created at,  invitee,  inviter,  url,  html url,  repository,   use Attributes"
+    },
+    {
+        "fileName": "Issue.py",
+        "functions": "assignee,  assignees,  body,  closed at,  closed by,  comments,  comments url,  created at,  events url,  html url,  id,  labels,  labels url,  milestone,  number,  pull request,  repository,  state,  state reason,  title,  updated at,  url,  user,  locked,  active lock reason,  as pull request,  add to assignees,  add to labels,  create comment,  delete labels,  edit,  lock,  unlock,  get comment,  get comments,  get events,  get labels,  remove from assignees,  remove from labels,  set labels,  get reactions,  create reaction,  delete reaction,  get timeline,   identity,   use Attributes"
+    },
+    {
+        "fileName": "IssueComment.py",
+        "functions": "body,  created at,  id,  issue url,  updated at,  url,  html url,  user,  reactions,  delete,  edit,  get reactions,  create reaction,  delete reaction,   use Attributes"
+    },
+    {
+        "fileName": "IssueEvent.py",
+        "functions": "actor,  commit id,  created at,  event,  id,  issue,  url,  node id,  commit url,  label,  assignee,  assigner,  review requester,  requested reviewer,  milestone,  rename,  dismissed review,  lock reason,   use Attributes"
+    },
+    {
+        "fileName": "IssuePullRequest.py",
+        "functions": "diff url,  html url,  patch url,   use Attributes"
+    },
+    {
+        "fileName": "Label.py",
+        "functions": "color,  description,  name,  url,  delete,  edit,   identity,   use Attributes"
+    },
+    {
+        "fileName": "License.py",
+        "functions": "key,  name,  spdx id,  url,  html url,  description,  implementation,  body,  permissions,  conditions,  limitations,   use Attributes"
+    },
+    {
+        "fileName": "MainClass.py",
+        "functions": "close,    enter  ,    exit  ,  FIX REPO GET GIT RE F,  FIX REPO GET GIT RE F,  per page,  per page,  rate limiting,  rate limiting resettime,  get rate limit,  oauth scopes,  get license,  get licenses,  get events,  get user,  get user by id,  get users,  get organization,  get organizations,  get enterprise,  get repo,  get repos,  get project,  get project column,  get gist,  get gists,  search repositories,  search users,  search issues,  search code,  search functions,  search topics,  render markdown,  get hook,  get hooks,  get hook delivery,  get hook deliveries,  get gitignore templates,  get gitignore template,  get emojis,  create from raw data,  dump,  load,  get oauth application,  get app"
+    },
+    {
+        "fileName": "Membership.py",
+        "functions": "url,  state,  role,  organization url,  organization,  user,   use Attributes"
+    },
+    {
+        "fileName": "Migration.py",
+        "functions": "id,  owner,  guid,  state,  lock repositories,  exclude attachments,  repositories,  url,  created at,  updated at,  get status,  get archive url,  delete,  unlock repo,   use Attributes"
+    },
+    {
+        "fileName": "Milestone.py",
+        "functions": "closed issues,  created at,  creator,  description,  due on,  id,  labels url,  number,  open issues,  state,  title,  updated at,  url,  delete,  edit,  get labels,   identity,   use Attributes"
+    },
+    {
+        "fileName": "NamedEnterpriseUser.py",
+        "functions": "github com login,  github com name,  enterprise server user ids,  github com user,  enterprise server user,  visual studio subscription user,  license type,  github com profile,  github com member roles,  github com enterprise roles,  github com verified domain emails,  github com saml name id,  github com orgs with pending invites,  github com two factor auth,  enterprise server primary emails,  visual studio license status,  visual studio subscription email,  total user accounts,   use Attributes"
+    },
+    {
+        "fileName": "NamedUser.py",
+        "functions": "node id,  twitter username,    hash  ,    eq  ,  avatar url,  bio,  blog,  collaborators,  company,  contributions,  created at,  disk usage,  email,  events url,  followers,  followers url,  following,  following url,  gists url,  gravatar id,  hireable,  html url,  id,  invitation teams url,  inviter,  location,  login,  name,  organizations url,  owned private repos,  permissions,  plan,  private gists,  public gists,  public repos,  received events url,  repos url,  role,  site admin,  starred url,  subscriptions url,  suspended at,  team count,  total private repos,  type,  updated at,  url,  get events,  get followers,  get following,  get gists,  get keys,  get orgs,  get projects,  get public events,  get public received events,  get received events,  get repo,  get repos,  get starred,  get subscriptions,  get watched,  has in following,   identity,  get organization membership,   use Attributes"
+    },
+    {
+        "fileName": "Notification.py",
+        "functions": "id,  last read at,  repository,  subject,  reason,  subscription url,  unread,  updated at,  url,  mark as read,  get pull request,  get issue,   use Attributes"
+    },
+    {
+        "fileName": "NotificationSubject.py",
+        "functions": "title,  url,  latest comment url,  type,   use Attributes"
+    },
+    {
+        "fileName": "Organization.py",
+        "functions": "avatar url,  billing email,  blog,  collaborators,  company,  created at,  default repository permission,  description,  disk usage,  email,  events url,  followers,  following,  gravatar id,  has organization projects,  has repository projects,  hooks url,  html url,  id,  issues url,  location,  login,  members can create repositories,  members url,  name,  owned private repos,  plan,  private gists,  public gists,  public members url,  public repos,  repos url,  total private repos,  two factor requirement enabled,  type,  updated at,  url,  add to members,  add to public members,  create fork,  create repo from template,  create hook,  create project,  create repo,  create secret,  get secrets,  get secret,  create team,  create variable,  get variables,  get variable,  delete hook,  edit,  edit hook,  get events,  get hook,  get hooks,  get hook delivery,  get hook deliveries,  get issues,  get members,  get projects,  get public members,  get outside collaborators,  remove outside collaborator,  convert to outside collaborator,  get public key,  get repo,  get repos,  get team,  get team by slug,  get teams,  invitations,  invite user,  cancel invitation,  has in members,  has in public members,  remove from membership,  remove from members,  remove from public members,  create migration,  get migrations,  get installations,   use Attributes"
+    },
+    {
+        "fileName": "OrganizationSecret.py",
+        "functions": "visibility,  selected repositories,  edit,  add repo,  remove repo,   use Attributes"
+    },
+    {
+        "fileName": "OrganizationVariable.py",
+        "functions": "visibility,  selected repositories,  edit,  add repo,  remove repo,   use Attributes"
+    },
+    {
+        "fileName": "PaginatedList.py",
+        "functions": " could Grow,   fetchNext Page,    getitem  ,    iter  ,   isBigger Than,    fetchTo Index,   grow,  total Count,   getLastPage Url,  reversed,    reverse,   could Grow,   fetchNext Page,   get Page,    parseLink Header,  get page,    iter  ,    finished"
+    },
+    {
+        "fileName": "Path.py",
+        "functions": "path,  title,  count,  uniques,   use Attributes"
+    },
+    {
+        "fileName": "Permissions.py",
+        "functions": "admin,  maintain,  pull,  push,  triage,   use Attributes"
+    },
+    {
+        "fileName": "Plan.py",
+        "functions": "collaborators,  name,  private repos,  space,  filled seats,  seats,   use Attributes"
+    },
+    {
+        "fileName": "Project.py",
+        "functions": "body,  columns url,  created at,  creator,  html url,  id,  name,  node id,  number,  owner url,  state,  updated at,  url,  delete,  edit,  get columns,  create column,   use Attributes"
+    },
+    {
+        "fileName": "ProjectCard.py",
+        "functions": "archived,  column url,  content url,  created at,  creator,  id,  node id,  note,  updated at,  url,  get content,  move,  delete,  edit,   use Attributes"
+    },
+    {
+        "fileName": "ProjectColumn.py",
+        "functions": "cards url,  created at,  id,  name,  node id,  project url,  updated at,  url,  get cards,  create card,  move,  delete,  edit,   use Attributes"
+    },
+    {
+        "fileName": "PublicKey.py",
+        "functions": "encrypt,  key,  key id,   use Attributes,  encrypt"
+    },
+    {
+        "fileName": "PullRequest.py",
+        "functions": "additions,  assignee,  assignees,  base,  body,  changed files,  closed at,  comments,  comments url,  functions,  functions url,  created at,  deletions,  diff url,  draft,  head,  html url,  id,  issue url,  labels,  merge commit sha,  mergeable,  mergeable state,  merged,  merged at,  merged by,  milestone,  number,  patch url,  rebaseable,  review comment url,  review comments,  review comments url,  state,  title,  updated at,  requested reviewers,  requested teams,  url,  user,  maintainer can modify,  as issue,  create comment,  create review comment,  create review comment reply,  create issue comment,  create review,  create review request,  delete review request,  edit,  get comment,  get review comment,  get comments,  get review comments,  get single review comments,  get functions,  get files,  get issue comment,  get issue comments,  get issue events,  get review,  get reviews,  get review requests,  get labels,  add to labels,  delete labels,  remove from labels,  set labels,  is merged,  merge,  add to assignees,  remove from assignees,  update branch,   use Attributes"
+    },
+    {
+        "fileName": "PullRequestComment.py",
+        "functions": "body,  commit id,  created at,  diff hunk,  id,  in reply to id,  original commit id,  original position,  path,  position,  pull request url,  updated at,  url,  html url,  user,  delete,  edit,  get reactions,  create reaction,  delete reaction,   use Attributes"
+    },
+    {
+        "fileName": "PullRequestMergeStatus.py",
+        "functions": "merged,  message,  sha,   use Attributes"
+    },
+    {
+        "fileName": "PullRequestPart.py",
+        "functions": "label,  ref,  repo,  sha,  user,   use Attributes"
+    },
+    {
+        "fileName": "PullRequestReview.py",
+        "functions": "id,  user,  body,  commit id,  state,  html url,  pull request url,  submitted at,  dismiss,  delete,   use Attributes"
+    },
+    {
+        "fileName": "Rate.py",
+        "functions": "limit,  remaining,  reset,  used,   use Attributes"
+    },
+    {
+        "fileName": "RateLimit.py",
+        "functions": "core,  search,  graphql,   use Attributes"
+    },
+    {
+        "fileName": "Reaction.py",
+        "functions": "content,  created at,  id,  user,  delete,   use Attributes"
+    },
+    {
+        "fileName": "Referrer.py",
+        "functions": "referrer,  count,  uniques,   use Attributes"
+    },
+    {
+        "fileName": "Repository.py",
+        "functions": "allow auto merge,  allow forking,  allow merge commit,  allow rebase merge,  allow squash merge,  allow update branch,  archived,  archive url,  assignees url,  blobs url,  branches url,  clone url,  collaborators url,  comments url,  functions url,  compare url,  contents url,  contributors url,  created at,  default branch,  delete branch on merge,  deployments url,  description,  downloads url,  events url,  fork,  forks,  forks count,  forks url,  full name,  git functions url,  git refs url,  git tags url,  git url,  has downloads,  has issues,  has pages,  has projects,  has wiki,  homepage,  hooks url,  html url,  id,  is template,  issue comment url,  issue events url,  issues url,  keys url,  labels url,  language,  languages url,  license,  master branch,  merge commit message,  merge commit title,  merges url,  milestones url,  mirror url,  name,  network count,  notifications url,  open issues,  open issues count,  organization,  owner,  parent,  permissions,  private,  pulls url,  pushed at,  releases url,  size,  source,  squash merge commit message,  squash merge commit title,  ssh url,  stargazers count,  stargazers url,  statuses url,  subscribers url,  subscribers count,  subscription url,  svn url,  tags url,  teams url,  topics,  trees url,  updated at,  url,  use squash pr title as default,  visibility,  watchers,  watchers count,  web commit signoff required,  add to collaborators,  get collaborator permission,  get pending invitations,  remove invitation,  compare,  create autolink,  create git blob,  create git commit,  create git ref,  create git tag and release,  create git release,  create git tag,  create git tree,  create hook,  create issue,  create key,  create label,  create milestone,  create project,  create pull,  create repository advisory,  report security vulnerability,    create repository advisory,  create repository dispatch,  create secret,  get secrets,  get secret,  create variable,  get variables,  get variable,  delete secret,  delete variable,  create source import,  delete,  edit,  get archive link,  get assignees,  get branch,  rename branch,  get branches,  get collaborators,  get comment,  get comments,  get commit,  get functions,  get contents,  get deployments,  get deployment,  create deployment,  get top referrers,  get top paths,  get views traffic,  get clones traffic,  get projects,  get autolinks,  create file,  get repository advisories,  get repository advisory,  update file,  delete file,  get dir contents,  get contributors,  get download,  get downloads,  get events,  get forks,  create fork,  get git blob,  get git commit,  get git ref,  get git refs,  get git matching refs,  get git tag,  get git tree,  get hook,  get hooks,  get hook delivery,  get hook deliveries,  get issue,  get issues,  get issues comments,  get issues event,  get issues events,  get key,  get keys,  get label,  get labels,  get languages,  get license,  get milestone,  get milestones,  get network events,  get public key,  get pull,  get pulls,  get pulls comments,  get pulls review comments,  get readme,  get self hosted runner,  get self hosted runners,  get source import,  get stargazers,  get stargazers with dates,  get stats contributors,  get stats commit activity,  get stats code frequency,  get stats participation,  get stats punch card,  get subscribers,  get tags,  get releases,  get release,  get latest release,  get teams,  get topics,  get watchers,  get workflows,  get workflow,  get workflow runs,  get workflow run,  has in assignees,  has in collaborators,   legacy convert issue,  legacy search issues,  get notifications,  mark notifications as read,  merge,  replace topics,  get vulnerability alert,  enable vulnerability alert,  disable vulnerability alert,  enable automated security fixes,  disable automated security fixes,  remove from collaborators,  remove self hosted runner,  remove autolink,  subscribe to hub,  unsubscribe from hub,  create check suite,  get check suite,  update check suites preferences,   hub,   identity,  get release asset,  create check run,  get check run,  get artifacts,  get artifact,  get codescan alerts,  get environments,  get environment,  create environment,  delete environment,   use Attributes"
+    },
+    {
+        "fileName": "RepositoryAdvisory.py",
+        "functions": "author,  closed at,  created at,  credits,  credits detailed,  cve id,  cwe ids,  cwes,  description,  ghsa id,  html url,  published at,  severity,  state,  summary,  updated at,  url,  vulnerabilities,  withdrawn at,  add vulnerability,  add vulnerabilities,  offer credit,  offer credits,  revoke credit,  clear credits,  edit,  accept report,  publish,  close,   use Attributes"
+    },
+    {
+        "fileName": "RepositoryAdvisoryCredit.py",
+        "functions": "login,  type,   use Attributes,   validate credit,   to github dict"
+    },
+    {
+        "fileName": "RepositoryAdvisoryCreditDetailed.py",
+        "functions": "state,  type,  user,   use Attributes"
+    },
+    {
+        "fileName": "RepositoryAdvisoryVulnerability.py",
+        "functions": "package,  patched versions,  vulnerable functions,  vulnerable version range,   use Attributes,   validate vulnerability,   to github dict"
+    },
+    {
+        "fileName": "RepositoryAdvisoryVulnerabilityPackage.py",
+        "functions": "ecosystem,  name,   use Attributes"
+    },
+    {
+        "fileName": "RepositoryKey.py",
+        "functions": "created at,  id,  key,  title,  url,  verified,  read only,  delete,   use Attributes"
+    },
+    {
+        "fileName": "RepositoryPreferences.py",
+        "functions": "preferences,  repository,   use Attributes"
+    },
+    {
+        "fileName": "Requester.py",
+        "functions": "getheaders,  read,  request,  getresponse,  close,  request,  getresponse,  close,  noop Auth,  injectConnection Classes,  resetConnection Classes,  inject Logger,  reset Logger,  setDebug Flag,  setOnCheck Me,  NEW DEBUG FRAM E,  DEBUG ON RESPONS E,  check me,   initializeDebug Feature,    getstate  ,    setstate  ,  close,  kwargs,  base url,  hostname,  auth,  with Auth,  requestJsonAnd Check,  requestMultipartAnd Check,  requestBlobAnd Check,    check,    custom Connection,  create Exception,  isRateLimit Error,  isPrimaryRateLimit Error,  isSecondaryRateLimit Error,    structuredFrom Json,  request Json,  request Multipart,  request Blob,  requestMemoryBlobAnd Check,    request Encode,    request Raw,    defer Request,    recordRequest Time,    makeAbsolute Url,    addParametersTo Url,    create Connection,   logger,    log,  requester,  with Requester,  encode,  encode,  encode,  encode"
+    },
+    {
+        "fileName": "RequiredPullRequestReviews.py",
+        "functions": "dismiss stale reviews,  require code owner reviews,  required approving review count,  url,  dismissal users,  dismissal teams,   use Attributes"
+    },
+    {
+        "fileName": "RequiredStatusChecks.py",
+        "functions": "strict,  contexts,  url,   use Attributes"
+    },
+    {
+        "fileName": "Secret.py",
+        "functions": "name,  created at,  updated at,  url,  delete,   use Attributes"
+    },
+    {
+        "fileName": "SelfHostedActionsRunner.py",
+        "functions": "id,  name,  os,  status,  busy,  labels,   use Attributes"
+    },
+    {
+        "fileName": "SourceImport.py",
+        "functions": "authors count,  authors url,  has large files,  html url,  large files count,  large files size,  repository url,  status,  status text,  url,  use lfs,  vcs,  vcs url,  update,   use Attributes"
+    },
+    {
+        "fileName": "Stargazer.py",
+        "functions": "starred at,  user,   use Attributes"
+    },
+    {
+        "fileName": "StatsCodeFrequency.py",
+        "functions": "week,  additions,  deletions,   use Attributes"
+    },
+    {
+        "fileName": "StatsCommitActivity.py",
+        "functions": "week,  total,  days,   use Attributes"
+    },
+    {
+        "fileName": "StatsContributor.py",
+        "functions": "author,  total,  weeks,   use Attributes,  w,  a,  d,  c,   use Attributes"
+    },
+    {
+        "fileName": "StatsParticipation.py",
+        "functions": "all,  owner,   use Attributes"
+    },
+    {
+        "fileName": "StatsPunchCard.py",
+        "functions": "get,   use Attributes"
+    },
+    {
+        "fileName": "Tag.py",
+        "functions": "commit,  name,  tarball url,  zipball url,   use Attributes"
+    },
+    {
+        "fileName": "Team.py",
+        "functions": "id,  members count,  members url,  name,  description,  permission,  repos count,  repositories url,  slug,  url,  organization,  privacy,  parent,  html url,  add to members,  add membership,  get team membership,  add to repos,  get repo permission,  set repo permission,  update team repository,  delete,  edit,  get teams,  get discussions,  get members,  get repos,  invitations,  has in members,  has in repos,  remove membership,  remove from members,  remove from repos,   identity,   use Attributes"
+    },
+    {
+        "fileName": "TeamDiscussion.py",
+        "functions": "author,  body,  body html,  body version,  comments count,  comments url,  created at,  html url,  last edited at,  node id,  number,  pinned,  private,  team url,  title,  updated at,  url,   use Attributes"
+    },
+    {
+        "fileName": "TimelineEvent.py",
+        "functions": "actor,  commit id,  created at,  event,  id,  node id,  commit url,  source,  body,  author association,  url,   use Attributes"
+    },
+    {
+        "fileName": "TimelineEventSource.py",
+        "functions": "type,  issue,   use Attributes"
+    },
+    {
+        "fileName": "Topic.py",
+        "functions": "name,  display name,  short description,  description,  created by,  released,  created at,  updated at,  featured,  curated,  score,   use Attributes"
+    },
+    {
+        "fileName": "UserKey.py",
+        "functions": "id,  key,  title,  url,  verified,  delete,   use Attributes"
+    },
+    {
+        "fileName": "Variable.py",
+        "functions": "name,  value,  created at,  updated at,  url,  edit,  delete,   use Attributes"
+    },
+    {
+        "fileName": "View.py",
+        "functions": "timestamp,  count,  uniques,   use Attributes"
+    },
+    {
+        "fileName": "Workflow.py",
+        "functions": "id,  name,  path,  state,  created at,  updated at,  url,  html url,  badge url,  create dispatch,  get runs,   use Attributes"
+    },
+    {
+        "fileName": "WorkflowJob.py",
+        "functions": "check run url,  completed at,  conclusion,  head sha,  html url,  id,  name,  node id,  run id,  run url,  started at,  status,  steps,  url,  logs url,   use Attributes"
+    },
+    {
+        "fileName": "WorkflowRun.py",
+        "functions": "id,  name,  head branch,  head sha,  display title,  path,  run attempt,  run number,  event,  run started at,  status,  conclusion,  workflow id,  url,  html url,  pull requests,  created at,  updated at,  jobs url,  logs url,  check suite url,  artifacts url,  get artifacts,  cancel url,  rerun url,  workflow url,  head commit,  repository,  head repository,  cancel,  rerun,  timing,  delete,  jobs,   use Attributes"
+    },
+    {
+        "fileName": "WorkflowStep.py",
+        "functions": "completed at,  conclusion,  name,  number,  started at,  status,   use Attributes"
+    },
+    {
+        "fileName": "__init__.py",
+        "functions": "set log level,  enable console debug logging"
+    }
+]
