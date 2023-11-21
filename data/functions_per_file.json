@@ -1,0 +1,558 @@
+[
+  {
+    "fileName": "AccessToken.py",
+    "commits": "_initAttributes, __repr__, token, type, scope, created, expires_in, expires_at, refresh_token, refresh_expires_in, refresh_expires_at, _useAttributes, "
+  },
+  {
+    "fileName": "AppAuthentication.py",
+    "commits": "__init__, "
+  },
+  {
+    "fileName": "ApplicationOAuth.py",
+    "commits": "_initAttributes, __init__, __repr__, client_id, client_secret, _useAttributes, get_login_url, get_access_token, get_app_user_auth, refresh_access_token, _checkError, "
+  },
+  {
+    "fileName": "Artifact.py",
+    "commits": "_initAttributes, __repr__, archive_download_url, created_at, expired, expires_at, head_sha, id, name, node_id, size_in_bytes, updated_at, url, workflow_run, delete, _useAttributes, "
+  },
+  {
+    "fileName": "Auth.py",
+    "commits": "token_type, token, username, password, token_type, token, __init__, login, username, password, __init__, token_type, token, token_type, __init__, app_id, private_key, token, get_installation_auth, create_jwt, __init__, token, __init__, withRequester, app_id, private_key, installation_id, token_permissions, token_type, token, _is_expired, _get_installation_authorization, __init__, token_type, token, withRequester, _is_expired, _refresh, expires_at, refresh_token, refresh_expires_at, __init__, username, login, password, withRequester, "
+  },
+  {
+    "fileName": "AuthenticatedUser.py",
+    "commits": "_initAttributes, __repr__, avatar_url, bio, blog, collaborators, company, created_at, disk_usage, email, events_url, followers, followers_url, following, following_url, gists_url, gravatar_id, hireable, html_url, id, location, login, name, node_id, organizations_url, owned_private_repos, plan, private_gists, public_gists, public_repos, received_events_url, repos_url, site_admin, starred_url, subscriptions_url, total_private_repos, type, updated_at, url, two_factor_authentication, add_to_emails, add_to_following, add_to_starred, add_to_subscriptions, add_to_watched, create_authorization, create_fork, create_repo_from_template, create_gist, create_key, create_project, create_repo, edit, get_authorization, get_authorizations, get_emails, get_events, get_followers, get_following, get_gists, get_issues, get_user_issues, get_key, get_keys, get_notification, get_notifications, get_organization_events, get_orgs, get_repo, get_repos, get_starred, get_starred_gists, get_subscriptions, get_teams, get_watched, get_installations, has_in_following, has_in_starred, has_in_subscriptions, has_in_watched, mark_notifications_as_read, remove_from_emails, remove_from_following, remove_from_starred, remove_from_subscriptions, remove_from_watched, accept_invitation, get_invitations, create_migration, get_migrations, get_organization_membership, _useAttributes, "
+  },
+  {
+    "fileName": "Authorization.py",
+    "commits": "_initAttributes, __repr__, app, created_at, id, note, note_url, scopes, token, updated_at, url, delete, edit, _useAttributes, "
+  },
+  {
+    "fileName": "AuthorizationApplication.py",
+    "commits": "_initAttributes, __repr__, name, url, _useAttributes, "
+  },
+  {
+    "fileName": "Autolink.py",
+    "commits": "_initAttributes, __repr__, id, key_prefix, url_template, is_alphanumeric, _useAttributes, "
+  },
+  {
+    "fileName": "Branch.py",
+    "commits": "__repr__, commit, name, protected, protection_url, _initAttributes, _useAttributes, get_protection, edit_protection, remove_protection, get_required_status_checks, edit_required_status_checks, remove_required_status_checks, get_required_pull_request_reviews, edit_required_pull_request_reviews, remove_required_pull_request_reviews, get_admin_enforcement, set_admin_enforcement, remove_admin_enforcement, get_user_push_restrictions, get_team_push_restrictions, add_user_push_restrictions, replace_user_push_restrictions, remove_user_push_restrictions, add_team_push_restrictions, replace_team_push_restrictions, remove_team_push_restrictions, remove_push_restrictions, get_required_signatures, add_required_signatures, remove_required_signatures, "
+  },
+  {
+    "fileName": "BranchProtection.py",
+    "commits": "__repr__, _initAttributes, url, required_status_checks, enforce_admins, required_linear_history, required_pull_request_reviews, get_user_push_restrictions, get_team_push_restrictions, _useAttributes, "
+  },
+  {
+    "fileName": "CheckRun.py",
+    "commits": "_initAttributes, __repr__, app, check_suite_id, completed_at, conclusion, details_url, external_id, head_sha, html_url, id, name, node_id, output, pull_requests, started_at, status, url, get_annotations, edit, _useAttributes, "
+  },
+  {
+    "fileName": "CheckRunAnnotation.py",
+    "commits": "_initAttributes, __repr__, annotation_level, end_column, end_line, message, path, raw_details, start_column, start_line, title, _useAttributes, "
+  },
+  {
+    "fileName": "CheckRunOutput.py",
+    "commits": "_initAttributes, __repr__, annotations_count, annotations_url, summary, text, title, _useAttributes, "
+  },
+  {
+    "fileName": "CheckSuite.py",
+    "commits": "_initAttributes, __repr__, after, app, before, check_runs_url, conclusion, created_at, head_branch, head_commit, head_sha, id, latest_check_runs_count, pull_requests, repository, status, updated_at, url, rerequest, get_check_runs, _useAttributes, "
+  },
+  {
+    "fileName": "Clones.py",
+    "commits": "_initAttributes, __repr__, timestamp, count, uniques, _useAttributes, "
+  },
+  {
+    "fileName": "CodeScanAlert.py",
+    "commits": "_initAttributes, __repr__, number, rule, tool, created_at, dismissed_at, dismissed_by, dismissed_reason, url, html_url, instances_url, most_recent_instance, state, get_instances, _useAttributes, "
+  },
+  {
+    "fileName": "CodeScanAlertInstance.py",
+    "commits": "_initAttributes, __repr__, ref, analysis_key, environment, state, commit_sha, message, location, classifications, _useAttributes, "
+  },
+  {
+    "fileName": "CodeScanAlertInstanceLocation.py",
+    "commits": "_initAttributes, __str__, __repr__, path, start_line, start_column, end_line, end_column, _useAttributes, "
+  },
+  {
+    "fileName": "CodeScanRule.py",
+    "commits": "_initAttributes, __repr__, id, name, severity, security_severity_level, description, _useAttributes, "
+  },
+  {
+    "fileName": "CodeScanTool.py",
+    "commits": "_initAttributes, __repr__, name, version, guid, _useAttributes, "
+  },
+  {
+    "fileName": "Commit.py",
+    "commits": "_initAttributes, __repr__, author, comments_url, commit, committer, files, html_url, parents, sha, stats, url, create_comment, create_status, get_comments, get_statuses, get_combined_status, get_pulls, get_check_runs, get_check_suites, _identity, _useAttributes, "
+  },
+  {
+    "fileName": "CommitCombinedStatus.py",
+    "commits": "_initAttributes, __repr__, state, sha, total_count, commit_url, url, repository, statuses, _useAttributes, "
+  },
+  {
+    "fileName": "CommitComment.py",
+    "commits": "_initAttributes, __repr__, body, commit_id, created_at, html_url, id, line, path, position, updated_at, url, user, delete, edit, get_reactions, create_reaction, delete_reaction, _useAttributes, "
+  },
+  {
+    "fileName": "CommitStats.py",
+    "commits": "_initAttributes, additions, deletions, total, _useAttributes, "
+  },
+  {
+    "fileName": "CommitStatus.py",
+    "commits": "_initAttributes, __repr__, created_at, creator, description, id, state, context, target_url, updated_at, url, _useAttributes, "
+  },
+  {
+    "fileName": "Comparison.py",
+    "commits": "_initAttributes, __repr__, ahead_by, base_commit, behind_by, commits, diff_url, files, html_url, merge_base_commit, patch_url, permalink_url, status, total_commits, url, _useAttributes, "
+  },
+  {
+    "fileName": "Consts.py",
+    "commits": ""
+  },
+  {
+    "fileName": "ContentFile.py",
+    "commits": "_initAttributes, __repr__, content, decoded_content, download_url, encoding, git_url, html_url, license, name, path, repository, sha, size, type, url, text_matches, _useAttributes, "
+  },
+  {
+    "fileName": "CWE.py",
+    "commits": "_initAttributes, cwe_id, name, _useAttributes, "
+  },
+  {
+    "fileName": "Deployment.py",
+    "commits": "_initAttributes, __repr__, id, ref, url, sha, task, payload, original_environment, environment, production_environment, transient_environment, description, creator, created_at, updated_at, statuses_url, repository_url, get_statuses, get_status, create_status, _get_accept_header, _useAttributes, "
+  },
+  {
+    "fileName": "DeploymentStatus.py",
+    "commits": "_initAttributes, __repr__, created_at, creator, deployment_url, description, environment, environment_url, repository_url, state, target_url, updated_at, url, id, node_id, _useAttributes, "
+  },
+  {
+    "fileName": "Download.py",
+    "commits": "_initAttributes, __repr__, accesskeyid, acl, bucket, content_type, created_at, description, download_count, expirationdate, html_url, id, mime_type, name, path, policy, prefix, redirect, s3_url, signature, size, url, delete, _useAttributes, "
+  },
+  {
+    "fileName": "Enterprise.py",
+    "commits": "__init__, _initAttributes, __repr__, enterprise, url, get_consumed_licenses, _useAttributes, "
+  },
+  {
+    "fileName": "EnterpriseConsumedLicenses.py",
+    "commits": "_initAttributes, __repr__, total_seats_consumed, total_seats_purchased, enterprise, url, get_users, _useAttributes, "
+  },
+  {
+    "fileName": "Environment.py",
+    "commits": "_initAttributes, __repr__, created_at, html_url, id, name, node_id, protection_rules, updated_at, url, deployment_branch_policy, _useAttributes, "
+  },
+  {
+    "fileName": "EnvironmentDeploymentBranchPolicy.py",
+    "commits": "_initAttributes, __repr__, protected_branches, custom_branch_policies, _useAttributes, __init__, _asdict, "
+  },
+  {
+    "fileName": "EnvironmentProtectionRule.py",
+    "commits": "_initAttributes, __repr__, id, node_id, type, reviewers, wait_timer, _useAttributes, "
+  },
+  {
+    "fileName": "EnvironmentProtectionRuleReviewer.py",
+    "commits": "_initAttributes, __repr__, type, reviewer, _useAttributes, __init__, _asdict, "
+  },
+  {
+    "fileName": "Event.py",
+    "commits": "_initAttributes, __repr__, actor, created_at, id, org, payload, public, repo, type, _useAttributes, "
+  },
+  {
+    "fileName": "File.py",
+    "commits": "_initAttributes, __repr__, additions, blob_url, changes, contents_url, deletions, filename, patch, previous_filename, raw_url, sha, status, _useAttributes, "
+  },
+  {
+    "fileName": "Gist.py",
+    "commits": "_initAttributes, __repr__, comments, comments_url, commits_url, created_at, description, files, fork_of, forks, forks_url, git_pull_url, git_push_url, history, html_url, id, owner, public, updated_at, url, user, create_comment, create_fork, delete, edit, get_comment, get_comments, is_starred, reset_starred, set_starred, _useAttributes, "
+  },
+  {
+    "fileName": "GistComment.py",
+    "commits": "_initAttributes, __repr__, body, created_at, id, updated_at, url, user, delete, edit, _useAttributes, "
+  },
+  {
+    "fileName": "GistFile.py",
+    "commits": "_initAttributes, __repr__, content, filename, language, raw_url, size, type, _useAttributes, "
+  },
+  {
+    "fileName": "GistHistoryState.py",
+    "commits": "_initAttributes, change_status, comments, comments_url, commits_url, committed_at, created_at, description, files, forks, forks_url, git_pull_url, git_push_url, history, html_url, id, owner, public, updated_at, url, user, version, _useAttributes, "
+  },
+  {
+    "fileName": "GitAuthor.py",
+    "commits": "_initAttributes, __repr__, date, email, name, _useAttributes, "
+  },
+  {
+    "fileName": "GitBlob.py",
+    "commits": "_initAttributes, __repr__, content, encoding, sha, size, url, _useAttributes, "
+  },
+  {
+    "fileName": "GitCommit.py",
+    "commits": "_initAttributes, __repr__, author, committer, html_url, message, parents, sha, tree, url, _identity, _useAttributes, "
+  },
+  {
+    "fileName": "GithubApp.py",
+    "commits": "_initAttributes, __repr__, created_at, description, events, external_url, html_url, id, name, owner, permissions, slug, updated_at, url, _useAttributes, "
+  },
+  {
+    "fileName": "GithubException.py",
+    "commits": "__init__, message, status, data, headers, __repr__, __str__, __init__, actual_value, expected_type, transformation_exception, "
+  },
+  {
+    "fileName": "GithubIntegration.py",
+    "commits": "__init__, close, __enter__, __exit__, get_github_for_installation, _get_headers, _get_installed_app, create_jwt, get_access_token, get_installation, get_installations, get_org_installation, get_repo_installation, get_user_installation, get_app_installation, get_app, "
+  },
+  {
+    "fileName": "GithubObject.py",
+    "commits": "is_defined, is_undefined, is_optional, is_optional_list, value, __repr__, value, remove_unset_items, __init__, value, __init__, value, setCheckAfterInitFlag, __init__, _storeAndUseAttributes, raw_data, raw_headers, _parentUrl, __makeSimpleAttribute, __makeSimpleListAttribute, __makeTransformedAttribute, _makeStringAttribute, _makeIntAttribute, _makeFloatAttribute, _makeBoolAttribute, _makeDictAttribute, _makeTimestampAttribute, _makeDatetimeAttribute, _makeClassAttribute, _makeListOfStringsAttribute, _makeListOfIntsAttribute, _makeListOfDictsAttribute, _makeListOfListOfStringsAttribute, _makeListOfClassesAttribute, _makeDictOfStringsToClassesAttribute, etag, last_modified, get__repr__, _initAttributes, _useAttributes, _completeIfNeeded, _completeIfNeeded, __init__, __eq__, __hash__, __ne__, _completeIfNotSet, _completeIfNeeded, __complete, update, format_params, "
+  },
+  {
+    "fileName": "GithubRetry.py",
+    "commits": "__init__, new, increment, get_content, __log, get_backoff_time, "
+  },
+  {
+    "fileName": "GitignoreTemplate.py",
+    "commits": "_initAttributes, __repr__, source, name, _useAttributes, "
+  },
+  {
+    "fileName": "GitObject.py",
+    "commits": "_initAttributes, __repr__, sha, type, url, _useAttributes, "
+  },
+  {
+    "fileName": "GitRef.py",
+    "commits": "_initAttributes, __repr__, object, ref, url, delete, edit, _useAttributes, "
+  },
+  {
+    "fileName": "GitRelease.py",
+    "commits": "_initAttributes, __repr__, id, body, title, tag_name, target_commitish, draft, prerelease, author, created_at, published_at, url, upload_url, html_url, tarball_url, zipball_url, assets, delete_release, update_release, upload_asset, upload_asset_from_memory, get_assets, _useAttributes, "
+  },
+  {
+    "fileName": "GitReleaseAsset.py",
+    "commits": "_initAttributes, __repr__, url, id, name, label, content_type, state, size, download_count, created_at, updated_at, browser_download_url, uploader, delete_asset, update_asset, _useAttributes, "
+  },
+  {
+    "fileName": "GitTag.py",
+    "commits": "_initAttributes, __repr__, message, object, sha, tag, tagger, url, _useAttributes, "
+  },
+  {
+    "fileName": "GitTree.py",
+    "commits": "_initAttributes, __repr__, sha, tree, url, _identity, _useAttributes, "
+  },
+  {
+    "fileName": "GitTreeElement.py",
+    "commits": "_initAttributes, __repr__, mode, path, sha, size, type, url, _useAttributes, "
+  },
+  {
+    "fileName": "Hook.py",
+    "commits": "_initAttributes, __repr__, active, config, created_at, events, id, last_response, name, test_url, updated_at, url, ping_url, delete, edit, test, ping, _useAttributes, "
+  },
+  {
+    "fileName": "HookDelivery.py",
+    "commits": "_initAttributes, __repr__, id, guid, delivered_at, redelivery, duration, status, status_code, event, action, installation_id, repository_id, url, _useAttributes, _initAttributes, __repr__, headers, payload, _useAttributes, __repr__, headers, payload, _initAttributes, _useAttributes, _initAttributes, __repr__, request, response, _useAttributes, "
+  },
+  {
+    "fileName": "HookDescription.py",
+    "commits": "_initAttributes, __repr__, events, name, schema, supported_events, _useAttributes, "
+  },
+  {
+    "fileName": "HookResponse.py",
+    "commits": "_initAttributes, __repr__, code, message, status, _useAttributes, "
+  },
+  {
+    "fileName": "InputFileContent.py",
+    "commits": "__init__, _identity, "
+  },
+  {
+    "fileName": "InputGitAuthor.py",
+    "commits": "__init__, __repr__, _identity, "
+  },
+  {
+    "fileName": "InputGitTreeElement.py",
+    "commits": "__init__, _identity, "
+  },
+  {
+    "fileName": "Installation.py",
+    "commits": "__init__, _initAttributes, __repr__, get_github_for_installation, id, app_id, target_id, target_type, get_repos, _useAttributes, "
+  },
+  {
+    "fileName": "InstallationAuthorization.py",
+    "commits": "_initAttributes, __repr__, token, expires_at, on_behalf_of, permissions, repository_selection, _useAttributes, "
+  },
+  {
+    "fileName": "Invitation.py",
+    "commits": "_initAttributes, __repr__, id, permissions, created_at, invitee, inviter, url, html_url, repository, _useAttributes, "
+  },
+  {
+    "fileName": "Issue.py",
+    "commits": "_initAttributes, __repr__, assignee, assignees, body, closed_at, closed_by, comments, comments_url, created_at, events_url, html_url, id, labels, labels_url, milestone, number, pull_request, repository, state, state_reason, title, updated_at, url, user, locked, active_lock_reason, as_pull_request, add_to_assignees, add_to_labels, create_comment, delete_labels, edit, lock, unlock, get_comment, get_comments, get_events, get_labels, remove_from_assignees, remove_from_labels, set_labels, get_reactions, create_reaction, delete_reaction, get_timeline, _identity, _useAttributes, "
+  },
+  {
+    "fileName": "IssueComment.py",
+    "commits": "_initAttributes, __repr__, body, created_at, id, issue_url, updated_at, url, html_url, user, reactions, delete, edit, get_reactions, create_reaction, delete_reaction, _useAttributes, "
+  },
+  {
+    "fileName": "IssueEvent.py",
+    "commits": "_initAttributes, __repr__, actor, commit_id, created_at, event, id, issue, url, node_id, commit_url, label, assignee, assigner, review_requester, requested_reviewer, milestone, rename, dismissed_review, lock_reason, _useAttributes, "
+  },
+  {
+    "fileName": "IssuePullRequest.py",
+    "commits": "_initAttributes, diff_url, html_url, patch_url, _useAttributes, "
+  },
+  {
+    "fileName": "Label.py",
+    "commits": "_initAttributes, __repr__, color, description, name, url, delete, edit, _identity, _useAttributes, "
+  },
+  {
+    "fileName": "License.py",
+    "commits": "_initAttributes, __repr__, key, name, spdx_id, url, html_url, description, implementation, body, permissions, conditions, limitations, _useAttributes, "
+  },
+  {
+    "fileName": "MainClass.py",
+    "commits": "__init__, close, __enter__, __exit__, FIX_REPO_GET_GIT_REF, FIX_REPO_GET_GIT_REF, per_page, per_page, rate_limiting, rate_limiting_resettime, get_rate_limit, oauth_scopes, get_license, get_licenses, get_events, get_user, get_user_by_id, get_users, get_organization, get_organizations, get_enterprise, get_repo, get_repos, get_project, get_project_column, get_gist, get_gists, search_repositories, search_users, search_issues, search_code, search_commits, search_topics, render_markdown, get_hook, get_hooks, get_hook_delivery, get_hook_deliveries, get_gitignore_templates, get_gitignore_template, get_emojis, create_from_raw_data, dump, load, get_oauth_application, get_app, "
+  },
+  {
+    "fileName": "Membership.py",
+    "commits": "_initAttributes, __repr__, url, state, role, organization_url, organization, user, _useAttributes, "
+  },
+  {
+    "fileName": "Migration.py",
+    "commits": "_initAttributes, __repr__, id, owner, guid, state, lock_repositories, exclude_attachments, repositories, url, created_at, updated_at, get_status, get_archive_url, delete, unlock_repo, _useAttributes, "
+  },
+  {
+    "fileName": "Milestone.py",
+    "commits": "_initAttributes, __repr__, closed_issues, created_at, creator, description, due_on, id, labels_url, number, open_issues, state, title, updated_at, url, delete, edit, get_labels, _identity, _useAttributes, "
+  },
+  {
+    "fileName": "NamedEnterpriseUser.py",
+    "commits": "_initAttributes, __repr__, github_com_login, github_com_name, enterprise_server_user_ids, github_com_user, enterprise_server_user, visual_studio_subscription_user, license_type, github_com_profile, github_com_member_roles, github_com_enterprise_roles, github_com_verified_domain_emails, github_com_saml_name_id, github_com_orgs_with_pending_invites, github_com_two_factor_auth, enterprise_server_primary_emails, visual_studio_license_status, visual_studio_subscription_email, total_user_accounts, _useAttributes, "
+  },
+  {
+    "fileName": "NamedUser.py",
+    "commits": "_initAttributes, __repr__, node_id, twitter_username, __hash__, __eq__, avatar_url, bio, blog, collaborators, company, contributions, created_at, disk_usage, email, events_url, followers, followers_url, following, following_url, gists_url, gravatar_id, hireable, html_url, id, invitation_teams_url, inviter, location, login, name, organizations_url, owned_private_repos, permissions, plan, private_gists, public_gists, public_repos, received_events_url, repos_url, role, site_admin, starred_url, subscriptions_url, suspended_at, team_count, total_private_repos, type, updated_at, url, get_events, get_followers, get_following, get_gists, get_keys, get_orgs, get_projects, get_public_events, get_public_received_events, get_received_events, get_repo, get_repos, get_starred, get_subscriptions, get_watched, has_in_following, _identity, get_organization_membership, _useAttributes, "
+  },
+  {
+    "fileName": "Notification.py",
+    "commits": "_initAttributes, __repr__, id, last_read_at, repository, subject, reason, subscription_url, unread, updated_at, url, mark_as_read, get_pull_request, get_issue, _useAttributes, "
+  },
+  {
+    "fileName": "NotificationSubject.py",
+    "commits": "_initAttributes, __repr__, title, url, latest_comment_url, type, _useAttributes, "
+  },
+  {
+    "fileName": "Organization.py",
+    "commits": "_initAttributes, __repr__, avatar_url, billing_email, blog, collaborators, company, created_at, default_repository_permission, description, disk_usage, email, events_url, followers, following, gravatar_id, has_organization_projects, has_repository_projects, hooks_url, html_url, id, issues_url, location, login, members_can_create_repositories, members_url, name, owned_private_repos, plan, private_gists, public_gists, public_members_url, public_repos, repos_url, total_private_repos, two_factor_requirement_enabled, type, updated_at, url, add_to_members, add_to_public_members, create_fork, create_repo_from_template, create_hook, create_project, create_repo, create_secret, get_secrets, get_secret, create_team, create_variable, get_variables, get_variable, delete_hook, edit, edit_hook, get_events, get_hook, get_hooks, get_hook_delivery, get_hook_deliveries, get_issues, get_members, get_projects, get_public_members, get_outside_collaborators, remove_outside_collaborator, convert_to_outside_collaborator, get_public_key, get_repo, get_repos, get_team, get_team_by_slug, get_teams, invitations, invite_user, cancel_invitation, has_in_members, has_in_public_members, remove_from_membership, remove_from_members, remove_from_public_members, create_migration, get_migrations, get_installations, _useAttributes, "
+  },
+  {
+    "fileName": "OrganizationSecret.py",
+    "commits": "_initAttributes, visibility, selected_repositories, edit, add_repo, remove_repo, _useAttributes, "
+  },
+  {
+    "fileName": "OrganizationVariable.py",
+    "commits": "_initAttributes, visibility, selected_repositories, edit, add_repo, remove_repo, _useAttributes, "
+  },
+  {
+    "fileName": "PaginatedList.py",
+    "commits": "_couldGrow, _fetchNextPage, __init__, __getitem__, __iter__, _isBiggerThan, __fetchToIndex, _grow, __init__, totalCount, _getLastPageUrl, reversed, __reverse, _couldGrow, _fetchNextPage, _getPage, __parseLinkHeader, get_page, __init__, __iter__, __finished, "
+  },
+  {
+    "fileName": "Path.py",
+    "commits": "_initAttributes, __repr__, path, title, count, uniques, _useAttributes, "
+  },
+  {
+    "fileName": "Permissions.py",
+    "commits": "_initAttributes, __repr__, admin, maintain, pull, push, triage, _useAttributes, "
+  },
+  {
+    "fileName": "Plan.py",
+    "commits": "_initAttributes, __repr__, collaborators, name, private_repos, space, filled_seats, seats, _useAttributes, "
+  },
+  {
+    "fileName": "Project.py",
+    "commits": "_initAttributes, __repr__, body, columns_url, created_at, creator, html_url, id, name, node_id, number, owner_url, state, updated_at, url, delete, edit, get_columns, create_column, _useAttributes, "
+  },
+  {
+    "fileName": "ProjectCard.py",
+    "commits": "_initAttributes, __repr__, archived, column_url, content_url, created_at, creator, id, node_id, note, updated_at, url, get_content, move, delete, edit, _useAttributes, "
+  },
+  {
+    "fileName": "ProjectColumn.py",
+    "commits": "_initAttributes, __repr__, cards_url, created_at, id, name, node_id, project_url, updated_at, url, get_cards, create_card, move, delete, edit, _useAttributes, "
+  },
+  {
+    "fileName": "PublicKey.py",
+    "commits": "encrypt, _initAttributes, __repr__, key, key_id, _useAttributes, encrypt, "
+  },
+  {
+    "fileName": "PullRequest.py",
+    "commits": "_initAttributes, __repr__, additions, assignee, assignees, base, body, changed_files, closed_at, comments, comments_url, commits, commits_url, created_at, deletions, diff_url, draft, head, html_url, id, issue_url, labels, merge_commit_sha, mergeable, mergeable_state, merged, merged_at, merged_by, milestone, number, patch_url, rebaseable, review_comment_url, review_comments, review_comments_url, state, title, updated_at, requested_reviewers, requested_teams, url, user, maintainer_can_modify, as_issue, create_comment, create_review_comment, create_review_comment_reply, create_issue_comment, create_review, create_review_request, delete_review_request, edit, get_comment, get_review_comment, get_comments, get_review_comments, get_single_review_comments, get_commits, get_files, get_issue_comment, get_issue_comments, get_issue_events, get_review, get_reviews, get_review_requests, get_labels, add_to_labels, delete_labels, remove_from_labels, set_labels, is_merged, merge, add_to_assignees, remove_from_assignees, update_branch, _useAttributes, "
+  },
+  {
+    "fileName": "PullRequestComment.py",
+    "commits": "_initAttributes, __repr__, body, commit_id, created_at, diff_hunk, id, in_reply_to_id, original_commit_id, original_position, path, position, pull_request_url, updated_at, url, html_url, user, delete, edit, get_reactions, create_reaction, delete_reaction, _useAttributes, "
+  },
+  {
+    "fileName": "PullRequestMergeStatus.py",
+    "commits": "_initAttributes, __repr__, merged, message, sha, _useAttributes, "
+  },
+  {
+    "fileName": "PullRequestPart.py",
+    "commits": "_initAttributes, __repr__, label, ref, repo, sha, user, _useAttributes, "
+  },
+  {
+    "fileName": "PullRequestReview.py",
+    "commits": "_initAttributes, __repr__, id, user, body, commit_id, state, html_url, pull_request_url, submitted_at, dismiss, delete, _useAttributes, "
+  },
+  {
+    "fileName": "Rate.py",
+    "commits": "_initAttributes, __repr__, limit, remaining, reset, used, _useAttributes, "
+  },
+  {
+    "fileName": "RateLimit.py",
+    "commits": "_initAttributes, __repr__, core, search, graphql, _useAttributes, "
+  },
+  {
+    "fileName": "Reaction.py",
+    "commits": "_initAttributes, __repr__, content, created_at, id, user, delete, _useAttributes, "
+  },
+  {
+    "fileName": "Referrer.py",
+    "commits": "_initAttributes, __repr__, referrer, count, uniques, _useAttributes, "
+  },
+  {
+    "fileName": "Repository.py",
+    "commits": "__repr__, allow_auto_merge, allow_forking, allow_merge_commit, allow_rebase_merge, allow_squash_merge, allow_update_branch, archived, archive_url, assignees_url, blobs_url, branches_url, clone_url, collaborators_url, comments_url, commits_url, compare_url, contents_url, contributors_url, created_at, default_branch, delete_branch_on_merge, deployments_url, description, downloads_url, events_url, fork, forks, forks_count, forks_url, full_name, git_commits_url, git_refs_url, git_tags_url, git_url, has_downloads, has_issues, has_pages, has_projects, has_wiki, homepage, hooks_url, html_url, id, is_template, issue_comment_url, issue_events_url, issues_url, keys_url, labels_url, language, languages_url, license, master_branch, merge_commit_message, merge_commit_title, merges_url, milestones_url, mirror_url, name, network_count, notifications_url, open_issues, open_issues_count, organization, owner, parent, permissions, private, pulls_url, pushed_at, releases_url, size, source, squash_merge_commit_message, squash_merge_commit_title, ssh_url, stargazers_count, stargazers_url, statuses_url, subscribers_url, subscribers_count, subscription_url, svn_url, tags_url, teams_url, topics, trees_url, updated_at, url, use_squash_pr_title_as_default, visibility, watchers, watchers_count, web_commit_signoff_required, add_to_collaborators, get_collaborator_permission, get_pending_invitations, remove_invitation, compare, create_autolink, create_git_blob, create_git_commit, create_git_ref, create_git_tag_and_release, create_git_release, create_git_tag, create_git_tree, create_hook, create_issue, create_key, create_label, create_milestone, create_project, create_pull, create_repository_advisory, report_security_vulnerability, __create_repository_advisory, create_repository_dispatch, create_secret, get_secrets, get_secret, create_variable, get_variables, get_variable, delete_secret, delete_variable, create_source_import, delete, edit, get_archive_link, get_assignees, get_branch, rename_branch, get_branches, get_collaborators, get_comment, get_comments, get_commit, get_commits, get_contents, get_deployments, get_deployment, create_deployment, get_top_referrers, get_top_paths, get_views_traffic, get_clones_traffic, get_projects, get_autolinks, create_file, get_repository_advisories, get_repository_advisory, update_file, delete_file, get_dir_contents, get_contributors, get_download, get_downloads, get_events, get_forks, create_fork, get_git_blob, get_git_commit, get_git_ref, get_git_refs, get_git_matching_refs, get_git_tag, get_git_tree, get_hook, get_hooks, get_hook_delivery, get_hook_deliveries, get_issue, get_issues, get_issues_comments, get_issues_event, get_issues_events, get_key, get_keys, get_label, get_labels, get_languages, get_license, get_milestone, get_milestones, get_network_events, get_public_key, get_pull, get_pulls, get_pulls_comments, get_pulls_review_comments, get_readme, get_self_hosted_runner, get_self_hosted_runners, get_source_import, get_stargazers, get_stargazers_with_dates, get_stats_contributors, get_stats_commit_activity, get_stats_code_frequency, get_stats_participation, get_stats_punch_card, get_subscribers, get_tags, get_releases, get_release, get_latest_release, get_teams, get_topics, get_watchers, get_workflows, get_workflow, get_workflow_runs, get_workflow_run, has_in_assignees, has_in_collaborators, _legacy_convert_issue, legacy_search_issues, get_notifications, mark_notifications_as_read, merge, replace_topics, get_vulnerability_alert, enable_vulnerability_alert, disable_vulnerability_alert, enable_automated_security_fixes, disable_automated_security_fixes, remove_from_collaborators, remove_self_hosted_runner, remove_autolink, subscribe_to_hub, unsubscribe_from_hub, create_check_suite, get_check_suite, update_check_suites_preferences, _hub, _identity, get_release_asset, create_check_run, get_check_run, get_artifacts, get_artifact, get_codescan_alerts, get_environments, get_environment, create_environment, delete_environment, _initAttributes, _useAttributes, "
+  },
+  {
+    "fileName": "RepositoryAdvisory.py",
+    "commits": "_initAttributes, __repr__, author, closed_at, created_at, credits, credits_detailed, cve_id, cwe_ids, cwes, description, ghsa_id, html_url, published_at, severity, state, summary, updated_at, url, vulnerabilities, withdrawn_at, add_vulnerability, add_vulnerabilities, offer_credit, offer_credits, revoke_credit, clear_credits, edit, accept_report, publish, close, _useAttributes, "
+  },
+  {
+    "fileName": "RepositoryAdvisoryCredit.py",
+    "commits": "login, type, _initAttributes, _useAttributes, _validate_credit, _to_github_dict, "
+  },
+  {
+    "fileName": "RepositoryAdvisoryCreditDetailed.py",
+    "commits": "state, type, user, _initAttributes, _useAttributes, "
+  },
+  {
+    "fileName": "RepositoryAdvisoryVulnerability.py",
+    "commits": "package, patched_versions, vulnerable_functions, vulnerable_version_range, _initAttributes, _useAttributes, _validate_vulnerability, _to_github_dict, "
+  },
+  {
+    "fileName": "RepositoryAdvisoryVulnerabilityPackage.py",
+    "commits": "_initAttributes, ecosystem, name, _useAttributes, "
+  },
+  {
+    "fileName": "RepositoryKey.py",
+    "commits": "_initAttributes, __repr__, created_at, id, key, title, url, verified, read_only, delete, _useAttributes, "
+  },
+  {
+    "fileName": "RepositoryPreferences.py",
+    "commits": "_initAttributes, preferences, repository, _useAttributes, "
+  },
+  {
+    "fileName": "Requester.py",
+    "commits": "__init__, getheaders, read, __init__, request, getresponse, close, __init__, request, getresponse, close, noopAuth, injectConnectionClasses, resetConnectionClasses, injectLogger, resetLogger, setDebugFlag, setOnCheckMe, NEW_DEBUG_FRAME, DEBUG_ON_RESPONSE, check_me, _initializeDebugFeature, __init__, __getstate__, __setstate__, close, kwargs, base_url, hostname, auth, withAuth, requestJsonAndCheck, requestMultipartAndCheck, requestBlobAndCheck, __check, __customConnection, createException, isRateLimitError, isPrimaryRateLimitError, isSecondaryRateLimitError, __structuredFromJson, requestJson, requestMultipart, requestBlob, requestMemoryBlobAndCheck, __requestEncode, __requestRaw, __deferRequest, __recordRequestTime, __makeAbsoluteUrl, __addParametersToUrl, __createConnection, _logger, __log, __init__, requester, withRequester, encode, encode, encode, encode, "
+  },
+  {
+    "fileName": "RequiredPullRequestReviews.py",
+    "commits": "_initAttributes, __repr__, dismiss_stale_reviews, require_code_owner_reviews, required_approving_review_count, url, dismissal_users, dismissal_teams, _useAttributes, "
+  },
+  {
+    "fileName": "RequiredStatusChecks.py",
+    "commits": "_initAttributes, __repr__, strict, contexts, url, _useAttributes, "
+  },
+  {
+    "fileName": "Secret.py",
+    "commits": "_initAttributes, __repr__, name, created_at, updated_at, url, delete, _useAttributes, "
+  },
+  {
+    "fileName": "SelfHostedActionsRunner.py",
+    "commits": "_initAttributes, __repr__, id, name, os, status, busy, labels, _useAttributes, "
+  },
+  {
+    "fileName": "SourceImport.py",
+    "commits": "_initAttributes, __repr__, authors_count, authors_url, has_large_files, html_url, large_files_count, large_files_size, repository_url, status, status_text, url, use_lfs, vcs, vcs_url, update, _useAttributes, "
+  },
+  {
+    "fileName": "Stargazer.py",
+    "commits": "_initAttributes, __repr__, starred_at, user, _useAttributes, "
+  },
+  {
+    "fileName": "StatsCodeFrequency.py",
+    "commits": "_initAttributes, week, additions, deletions, _useAttributes, "
+  },
+  {
+    "fileName": "StatsCommitActivity.py",
+    "commits": "_initAttributes, week, total, days, _useAttributes, "
+  },
+  {
+    "fileName": "StatsContributor.py",
+    "commits": "author, total, weeks, _initAttributes, _useAttributes, w, a, d, c, _initAttributes, _useAttributes, "
+  },
+  {
+    "fileName": "StatsParticipation.py",
+    "commits": "_initAttributes, all, owner, _useAttributes, "
+  },
+  {
+    "fileName": "StatsPunchCard.py",
+    "commits": "get, _initAttributes, _useAttributes, "
+  },
+  {
+    "fileName": "Tag.py",
+    "commits": "__repr__, _initAttributes, commit, name, tarball_url, zipball_url, _useAttributes, "
+  },
+  {
+    "fileName": "Team.py",
+    "commits": "_initAttributes, __repr__, id, members_count, members_url, name, description, permission, repos_count, repositories_url, slug, url, organization, privacy, parent, html_url, add_to_members, add_membership, get_team_membership, add_to_repos, get_repo_permission, set_repo_permission, update_team_repository, delete, edit, get_teams, get_discussions, get_members, get_repos, invitations, has_in_members, has_in_repos, remove_membership, remove_from_members, remove_from_repos, _identity, _useAttributes, "
+  },
+  {
+    "fileName": "TeamDiscussion.py",
+    "commits": "_initAttributes, __repr__, author, body, body_html, body_version, comments_count, comments_url, created_at, html_url, last_edited_at, node_id, number, pinned, private, team_url, title, updated_at, url, _useAttributes, "
+  },
+  {
+    "fileName": "TimelineEvent.py",
+    "commits": "_initAttributes, __repr__, actor, commit_id, created_at, event, id, node_id, commit_url, source, body, author_association, url, _useAttributes, "
+  },
+  {
+    "fileName": "TimelineEventSource.py",
+    "commits": "_initAttributes, __repr__, type, issue, _useAttributes, "
+  },
+  {
+    "fileName": "Topic.py",
+    "commits": "_initAttributes, __repr__, name, display_name, short_description, description, created_by, released, created_at, updated_at, featured, curated, score, _useAttributes, "
+  },
+  {
+    "fileName": "UserKey.py",
+    "commits": "_initAttributes, __repr__, id, key, title, url, verified, delete, _useAttributes, "
+  },
+  {
+    "fileName": "Variable.py",
+    "commits": "_initAttributes, __repr__, name, value, created_at, updated_at, url, edit, delete, _useAttributes, "
+  },
+  {
+    "fileName": "View.py",
+    "commits": "_initAttributes, __repr__, timestamp, count, uniques, _useAttributes, "
+  },
+  {
+    "fileName": "Workflow.py",
+    "commits": "_initAttributes, __repr__, id, name, path, state, created_at, updated_at, url, html_url, badge_url, create_dispatch, get_runs, _useAttributes, "
+  },
+  {
+    "fileName": "WorkflowJob.py",
+    "commits": "_initAttributes, __repr__, check_run_url, completed_at, conclusion, head_sha, html_url, id, name, node_id, run_id, run_url, started_at, status, steps, url, logs_url, _useAttributes, "
+  },
+  {
+    "fileName": "WorkflowRun.py",
+    "commits": "_initAttributes, __repr__, id, name, head_branch, head_sha, display_title, path, run_attempt, run_number, event, run_started_at, status, conclusion, workflow_id, url, html_url, pull_requests, created_at, updated_at, jobs_url, logs_url, check_suite_url, artifacts_url, get_artifacts, cancel_url, rerun_url, workflow_url, head_commit, repository, head_repository, cancel, rerun, timing, delete, jobs, _useAttributes, "
+  },
+  {
+    "fileName": "WorkflowStep.py",
+    "commits": "_initAttributes, __repr__, completed_at, conclusion, name, number, started_at, status, _useAttributes, "
+  },
+  {
+    "fileName": "__init__.py",
+    "commits": "set_log_level, enable_console_debug_logging, "
+  }
+]
