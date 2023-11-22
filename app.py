@@ -35,7 +35,7 @@ This function takes in a string and returns a summary of the string
 """
 def get_summary_response(input_text):
   batch = tokenizer([input_text],truncation=True,padding='longest',max_length=3000, return_tensors="pt").to(device)
-  gen_out = model.generate(**batch,max_length=200,num_beams=5, num_return_sequences=1, temperature=1.5)
+  gen_out = model.generate(**batch,max_length=256,num_beams=5, num_return_sequences=1, temperature=1)
   output_text = tokenizer.batch_decode(gen_out, skip_special_tokens=True)
   return output_text
 
