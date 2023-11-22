@@ -34,7 +34,7 @@ print("Initialization complete\n")
 This function takes in a string and returns a summary of the string
 """
 def get_summary_response(input_text):
-  batch = tokenizer([input_text],truncation=True,padding='longest',max_length=1024, return_tensors="pt").to(device)
+  batch = tokenizer([input_text],truncation=True,padding='longest',max_length=3000, return_tensors="pt").to(device)
   gen_out = model.generate(**batch,max_length=200,num_beams=5, num_return_sequences=1, temperature=1.5)
   output_text = tokenizer.batch_decode(gen_out, skip_special_tokens=True)
   return output_text
@@ -67,6 +67,7 @@ def generate_commit_summary():
         # generate summary
         print("Here is the most recent commit summary: ")
         print(get_summary_response(commits_combination)[0])
+        print("\n")
     except Exception as e:
         print("Could not retrieve commit messages")
         print(e)
