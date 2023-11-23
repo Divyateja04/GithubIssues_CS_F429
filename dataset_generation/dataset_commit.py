@@ -44,15 +44,23 @@ try:
             # Append the filename to the list
             files.append(file.filename)
 
-        commit_object = {
-            "commit": commit_message,
-            "files": files
-        }
+        if commit.author is not None:
+            commit_object = {
+                "commit": commit_message,
+                "files": files,
+                "author": commit.author.login,
+            }
+        else:
+            commit_object = {
+                "commit": commit_message,
+                "files": files,
+                "author": None,
+            }
 
         commit_messages.append(commit_object)
-    # Save the commits to a json file
-    with open('data/commits.json', 'w') as f:
-        json.dump(commit_messages, f, indent=4)
+        # Save the commits to a json file
+        with open('data/commits.json', 'w') as f:
+            json.dump(commit_messages, f, indent=4)
 
 except Exception as e:
     print(e)
