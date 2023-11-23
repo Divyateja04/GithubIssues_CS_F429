@@ -89,6 +89,9 @@ def get_file_correlations():
     else:
         print("No similar files found")
 
+'''
+This function generates a user report based on their github username
+'''
 def get_user_report():
     print("You have chosen to give a user report")
     username = input("Enter github username: ")
