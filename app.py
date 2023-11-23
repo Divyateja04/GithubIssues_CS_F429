@@ -34,8 +34,8 @@ print("Initialization complete\n")
 This function takes in a string and returns a summary of the string
 """
 def get_summary_response(input_text):
-  batch = tokenizer([input_text],truncation=True,padding='longest',max_length=3000, return_tensors="pt").to(device)
-  gen_out = model.generate(**batch,max_length=256,num_beams=5, num_return_sequences=1, temperature=1)
+  batch = tokenizer([input_text],truncation=True,padding='longest',max_length=5000, return_tensors="pt").to(device)
+  gen_out = model.generate(**batch,max_length=256,num_beams=5, num_return_sequences=1, temperature=1.5)
   output_text = tokenizer.batch_decode(gen_out, skip_special_tokens=True)
   return output_text
 
@@ -89,12 +89,47 @@ def get_file_correlations():
     else:
         print("No similar files found")
 
-
+def get_user_report():
+    print("You have chosen to give a user report")
+    username = input("Enter github username: ")
+    user = g.get_user(username)
+    print("\n")
+    print("User: " + user.name)
+    print("Public Repos: " + str(user.public_repos))
+    print("Followers: " + str(user.followers))
+    print("Following: " + str(user.following))
+    print("\n")
+        
+    commits_per_user = []
+    
+    # Open commits dataset from json
+    with open('data/commits.json') as f:
+        data = json.load(f)
+    
+    # Iterate through commits dataset
+    for commit in data:
+        # Check if the commit belongs to the user
+        if commit["author"] == username:
+            commits_per_user.append(commit["commit"])
+    try:
+        commits_per_user = commits_per_user[:20]
+        # join all the commit messages into one string
+        commits_per_user_combination = ", ".join(commits_per_user)
+        # remove emails from the string to avoid summarizing them
+        commits_per_user_combination = commits_per_user_combination.replace("<", "").replace(">", "").replace("#", "").replace("`", "")
+        # generate summary
+        print(f"Here is the commit report for the user {username}: ")
+        print(get_summary_response(commits_per_user_combination)[0])
+        print("\n") 
+    except Exception as e:
+        print(f"Could not generate report: {e}")
+    
 while True:
     print("Hello there, what would you like to do today?")
     print("1. Create a new issue from description")
     print("2. Check most recent commit summary")
     print("3. Find file correlations")
+    print("4. Give user report (Enter github username)")
     print("E. Exit")
 
     user_input = input("\nEnter your choice: ")
@@ -111,6 +146,9 @@ while True:
     
     if user_input == "3":
         get_file_correlations()
+    
+    if user_input == "4":
+        get_user_report()        
     
     if user_input == "E":
         # To close github connections after use
