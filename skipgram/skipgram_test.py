@@ -11,7 +11,7 @@ import torch.nn.functional as F
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Extracting and opening dataset
-DATASET_LOCATION = "./data/"
+DATASET_LOCATION = "../data/"
 file_pairs1 = pd.read_csv(
     DATASET_LOCATION + "file_pairs_1.csv", header=None, index_col=False)
 file_pairs2 = pd.read_csv(
@@ -65,7 +65,7 @@ class SkipgramModel(nn.Module):
 model = SkipgramModel(len(file_pair_indices), 128)
 model.load_state_dict(
     torch.load(
-        "./skipgram/commit_skipgram.pth", map_location=torch.device(device)
+        "./commit_skipgram.pth", map_location=torch.device(device)
     )
 )
 model.eval()
@@ -119,14 +119,13 @@ def get_skipgram_accuracy():
             # Find the cosine similarity between the two vectors
             cosine_sim = F.cosine_similarity(vector, target_vector, dim=0).data.tolist()
             
-            temp_store_scores[x + " " + y] = math.abs(cosine_sim)
+            temp_store_scores[x + " " + y] = abs(cosine_sim)
 
     total = len(temp_store_scores)
     for x in tqdm(temp_store_scores.keys()):
-        print(x + " " + str(temp_store_scores[x]))
         if x.split(" ")[0] == x.split(" ")[1]:
             continue
-        if temp_store_scores[x] > 0.5:
+        if temp_store_scores[x] > 0.02:
             correct += 1
     
     return correct/total
