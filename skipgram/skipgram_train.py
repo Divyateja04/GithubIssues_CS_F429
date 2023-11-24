@@ -13,7 +13,7 @@ from tqdm import tqdm
 logging.basicConfig(
     level=logging.INFO,
     datefmt="%d-%b-%y %H:%M:%S",
-    filename=f"./logs/skipgram_logs/{datetime.now().strftime('%d-%m-%Y_%H-%M-%S')}_app.log",
+    filename=f"../logs/skipgram_logs/{datetime.now().strftime('%d-%m-%Y_%H-%M-%S')}_app.log",
     filemode="w",
     format="%(asctime)s [%(levelname)s] %(message)s",
 )
@@ -23,20 +23,41 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 logging.info(device)
 
 # Extracting and opening dataset
-DATASET_LOCATION = "./data/"
-file_pairs = pd.read_csv(DATASET_LOCATION + "file_pairs.csv").values.tolist()
+DATASET_LOCATION = "../data/"
+file_pairs1 = pd.read_csv(
+    DATASET_LOCATION + "file_pairs_1.csv", header=None, index_col=False)
+file_pairs2 = pd.read_csv(
+    DATASET_LOCATION + "file_pairs_2.csv", header=None, index_col=False)
 
-file_pair_indices = {}
 
 # Creating a dictionary of all the unique files
+file_pair_indices = {}
+
 counter = 0
-for (x, y) in file_pairs:
+# Creating a dictionary of all the unique files for this repo
+file_pair_indices = {}
+
+counter = 0
+for (x, y) in file_pairs1.values:
     if x not in file_pair_indices.keys():
         file_pair_indices[x] = counter
         counter += 1
     if y not in file_pair_indices.keys():
         file_pair_indices[y] = counter
         counter += 1
+for (x, y) in file_pairs2.values:
+    if x not in file_pair_indices.keys():
+        file_pair_indices[x] = counter
+        counter += 1
+    if y not in file_pair_indices.keys():
+        file_pair_indices[y] = counter
+        counter += 1
+        
+file_pairs = []
+for (x, y) in file_pairs1.values:
+    if not x.startswith("_") and not y.startswith("_") and x != y and not x.endswith(".txt") and not y.endswith(".txt") and not x.endswith(".rst")and not y.endswith(".rst") and not x.endswith(".pyi")and not y.endswith(".pyi"):
+        file_pairs.append((x, y))
+
 
 logging.info(f"The number of unique files is: {len(file_pair_indices)}")
 # Custom Dataset class which contains all the file pairs
@@ -59,7 +80,6 @@ customDataset = CustomDataset()
 
 # Custom Dataloader
 dataLoader = DataLoader(customDataset, batch_size=512, shuffle=True)
-
 
 # Skip gram Model
 class SkipgramModel(nn.Module):
@@ -120,4 +140,4 @@ for epoch in tqdm(range(0, 50 + 1)):
     #  Saving the model
     if loss < previous_loss:
         previous_loss = loss
-        torch.save(model.state_dict(), "./models/commit_skipgram.pth")
+        torch.save(model.state_dict(), "./commit_skipgram.pth")

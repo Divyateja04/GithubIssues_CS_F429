@@ -1,5 +1,5 @@
 # Importing the Libraries
-import json
+import math
 from tqdm import tqdm
 import pandas as pd
 
@@ -100,3 +100,35 @@ def similarity_check(target):
         similarities.append([list(file_pair_indices)[i], cosine_sim])
 
     return sorted(similarities, key=lambda x: x[1], reverse=True)[:20]
+
+# Write code to get accuracy of this skipgram
+def get_skipgram_accuracy():
+    total = 0
+    correct = 0
+    
+    temp_store_scores = {}
+    
+    for x in tqdm(file_pair_indices.keys()):
+        for y in (file_pair_indices.keys()):
+            if x == y or x + " " + y in temp_store_scores.keys() or y + " " + x in temp_store_scores.keys():
+                continue
+            
+            target_vector = model.prediction(torch.tensor(file_pair_indices[x]).to(device))
+            vector = model.prediction(torch.tensor(file_pair_indices[y]).to(device))
+
+            # Find the cosine similarity between the two vectors
+            cosine_sim = F.cosine_similarity(vector, target_vector, dim=0).data.tolist()
+            
+            temp_store_scores[x + " " + y] = math.abs(cosine_sim)
+
+    total = len(temp_store_scores)
+    for x in tqdm(temp_store_scores.keys()):
+        print(x + " " + str(temp_store_scores[x]))
+        if x.split(" ")[0] == x.split(" ")[1]:
+            continue
+        if temp_store_scores[x] > 0.5:
+            correct += 1
+    
+    return correct/total
+
+print(get_skipgram_accuracy())
