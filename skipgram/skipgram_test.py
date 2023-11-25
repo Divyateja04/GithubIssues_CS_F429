@@ -130,4 +130,3 @@ def get_skipgram_accuracy():
     
     return correct/total
 
-print(get_skipgram_accuracy())
