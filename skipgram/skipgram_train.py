@@ -114,9 +114,13 @@ optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 def train():
     model.train()
 
+    # We initialize variables and use them to accumulate values
     total_loss = 0
     total_quantity = 0
 
+    # we enumerate over dataLoader and use batch_idx to get the batch loss
+    # and batch quantity and then we accumulate them in total_loss and
+    # total_quantity respectively
     for batch_idx, (x, y) in enumerate(dataLoader):
         x = x.to(device)
         y = y.to(device)

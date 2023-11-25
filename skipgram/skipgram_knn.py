@@ -1,6 +1,6 @@
 """
 Clustering the outputs from skipgram model
-We import the models from already pre trained model on the HPC, and try to cluster this data together
+We import the models from already pre trained skipgram model try to cluster this data together
 """
 
 # Importing the Libraries
@@ -18,6 +18,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+# Logging configuration
 logging.basicConfig(
     level=logging.INFO,
     datefmt="%d-%b-%y %H:%M:%S",

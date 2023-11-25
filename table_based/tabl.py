@@ -2,17 +2,21 @@ import json
 from transformers import TapexTokenizer, BartForConditionalGeneration
 import pandas as pd
 
+# Load model and tokenizer
 tokenizer = TapexTokenizer.from_pretrained("microsoft/tapex-base-finetuned-wikisql")
 model = BartForConditionalGeneration.from_pretrained("microsoft/tapex-base-finetuned-wikisql")
 
+# Load data
 with open("../data/commits.json", "r") as f:
     data = json.load(f)
-    
+  
+# Preprocess data  
 for elem in data:
     elem["files"] = ", ".join(elem["files"])
     if elem["author"] is None:
         elem["author"] = "Unknown"
     
+# Query
 query = "What files can be used for adding valid Repository visibility value?"
 # Have to iterate through all slices of 25
 # since the model can only handle 25 rows at a time
@@ -29,6 +33,8 @@ for i in range(0, len(data), 25):
         encoding = tokenizer(table=table, query=query, return_tensors="pt", max_new_tokens=1024)
         outputs = model.generate(**encoding, max_length=1024, num_beams=5, early_stopping=True)
         answer = tokenizer.batch_decode(outputs, skip_special_tokens=True)[0]
+        print(answer)
+        break
        
         # Split string based on the comma
         answer = answer.split(",")
@@ -41,6 +47,6 @@ for i in range(0, len(data), 25):
         pass
 
 # print top 5 answers
-print(sorted(best_answers.items(), key=lambda x: x[1], reverse=True)[:5])
+# print(sorted(best_answers.items(), key=lambda x: x[1], reverse=True)[:5])
     
 
